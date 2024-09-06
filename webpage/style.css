@@ -1,0 +1,55 @@
+/* Selectors cheat sheet: https://dev.to/dawnind/css3-selectors-cheat-sheet-6dk */
+
+/* PAGE-WIDE */
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* HEADER */
+#header {
+    margin: auto;
+    width: 100%;
+}
+#header #title {
+    background-image: url('../images/header-background.jpg');
+}
+#header #title h1 {
+    margin: auto;
+    width: 60%;
+    padding: 5%;
+    text-align: center;
+    background-color: white;
+    color: #0e1247;
+}
+
+/* LINKS SECTION */
+#links .column {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 2.5% 0;
+}
+#links .column #left {
+    padding-left: 30%;
+}
+#links .column #right {
+    padding-right: 30%;
+}
+.row:after {
+    /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+/* LINK STYLING */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:visited {
+    color: gray;
+}
