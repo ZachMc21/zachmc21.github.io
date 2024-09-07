@@ -23,24 +23,28 @@
 }
 
 /* LINKS SECTION */
+#links {
+    display: flex;
+    align-items: center;
+}
 #links .column {
-    float: left;
     width: 50%;
     text-align: center;
+    margin: auto;
     padding: 2.5% 0;
+    font-size: 1.5vw;
 }
-#links .column #left {
+#links .column img {
+    max-width: 0.8em;
+    height: auto;
+}
+#links #left {
     padding-left: 30%;
 }
-#links .column #right {
+#links #right {
     padding-right: 30%;
 }
-.row:after {
-    /* Clear floats after the columns */
-    content: "";
-    display: table;
-    clear: both;
-}
+
 /* LINK STYLING */
 a:link {
     color: black;
