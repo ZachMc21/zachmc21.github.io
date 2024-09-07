@@ -8,22 +8,26 @@
 /* HEADER */
 #header {
     position: relative;
-    margin: auto;
-    width: 100%;
+    margin: 3%;
+    width: 94%;
 }
-#header #title {
+#title {
     background-image: url('../webpage/images/backgrounds/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 7.5%;
 }
-#header #title h1 {
-    margin: auto;
-    width: 50%;
-    height: 10%;
+#title_inner {
+    margin: 0 auto;
+    width: 75%;
+    height: 60%;
     padding: 5%;
     text-align: center;
     background-color: white;
     color: #0e1247;
+}
+#title_inner h1 {
+    font-size: 5vw;
 }
 
 /* LINKS SECTION */
@@ -36,17 +40,17 @@
     text-align: center;
     margin: auto;
     padding: 2.5% 0;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 #links .column img {
     max-width: 0.8em;
     height: auto;
 }
 #links #left {
-    padding-left: 30%;
+    padding-left: 20%;
 }
 #links #right {
-    padding-right: 30%;
+    padding-right: 20%;
 }
 
 /* LINK STYLING */
