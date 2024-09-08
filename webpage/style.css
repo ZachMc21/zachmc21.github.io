@@ -24,7 +24,7 @@
     padding: 5%;
     text-align: center;
     background-color: white;
-    color: #0e1247;
+    color: #05253b;
 }
 #title_inner h1 {
     font-size: 5vw;
@@ -64,4 +64,8 @@ a:hover {
 }
 a:visited {
     color: gray;
+}
+
+#main {
+    width: 80%;
 }
