@@ -127,5 +127,24 @@ ul p {
 
 /* Personal life */
 #personal_life {
-    background-color: rgb(167, 204, 216);
+    margin: 5% auto;
+    padding: 4%;
+    background-color: #BFCFD4;
+}
+#personal_life p {
+    font-size: 2vw;
+    text-align: center;
+    margin: 0;
+    color: rgb(99, 99, 99);
+}
+#personal_life #intro {
+    margin-bottom: 1em;
+}
+
+/* FOOTER */
+footer {
+    color: rgb(203, 239, 252);
+    background-color: #05253b;
+    font-size: 5%;
+    font-style: italic;
 }
