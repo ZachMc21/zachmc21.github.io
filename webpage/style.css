@@ -41,7 +41,11 @@ a:visited {
     color: #05253b;
 }
 #title_inner h1 {
+    margin-bottom: 0;
     font-size: 5vw;
+}
+#title_inner p {
+    margin-top: 0;
 }
 
 /* LINKS SECTION */
@@ -99,13 +103,13 @@ a:visited {
     background-color: rgb(203, 239, 252);
 }
 #skills #languages {
-    width: 27%;
+    width: 25%;
 }
 #skills #web {
-    width: 27%;
+    width: 25%;
 }
 #skills #other {
-    width: 36%;
+    width: 40%;
 }
 #skills:after {    /* Clear floats after the columns */
     content: "";
