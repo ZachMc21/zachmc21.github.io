@@ -99,17 +99,19 @@ a:visited {
     float: left;
     text-align: left;
     margin: 1%;
-    padding-right: 1%;
+    padding: 1%;
     background-color: rgb(203, 239, 252);
 }
 #skills #languages {
-    width: 25%;
+    width: 26%;
+    margin-left: 0;
 }
 #skills #web {
-    width: 25%;
+    width: 26%;
 }
 #skills #other {
     width: 40%;
+    margin-right: 0;
 }
 #skills:after {    /* Clear floats after the columns */
     content: "";
@@ -119,4 +121,11 @@ a:visited {
 ul p {
     margin: 0;
     margin-left: 5%;
+}
+
+/* Projects */
+
+/* Personal life */
+#personal_life {
+    background-color: rgb(167, 204, 216);
 }
