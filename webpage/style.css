@@ -22,7 +22,7 @@ a:visited {
 /* HEADER */
 #header {
     position: relative;
-    margin: 3%;
+    margin: 3% auto;
     width: 94%;
 }
 #title {
@@ -81,6 +81,38 @@ a:visited {
 
 /* MAIN CONTENT */
 #main {
+    margin: 0 auto;
     width: 80%;
-    background-color: lightblue;
+}
+
+/* Skills section - 3 columns */
+#skills {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#skills .column {
+    float: left;
+    text-align: left;
+    margin: 1%;
+    padding-right: 1%;
+    background-color: rgb(203, 239, 252);
+}
+#skills #languages {
+    width: 27%;
+}
+#skills #web {
+    width: 27%;
+}
+#skills #other {
+    width: 36%;
+}
+#skills:after {    /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+ul p {
+    margin: 0;
+    margin-left: 5%;
 }
