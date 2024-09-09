@@ -5,6 +5,20 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* LINK STYLING */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+a:visited {
+    color: gray;
+}
+
+
 /* HEADER */
 #header {
     position: relative;
@@ -15,7 +29,7 @@
     background-image: url('../webpage/images/backgrounds/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 7.5%;
+    padding: 5%;
 }
 #title_inner {
     margin: 0 auto;
@@ -53,19 +67,20 @@
     padding-right: 20%;
 }
 
-/* LINK STYLING */
-a:link {
-    color: black;
-    text-decoration: none;
-}
-a:hover {
-    color: black;
-    text-decoration: underline;
-}
-a:visited {
-    color: gray;
+/* Heading blurb */
+#whoami {
+    margin: 5% 0 auto auto;
+    width: 90%;
+    height: 40%;
+    padding: 2% 5%;
+    text-align: center;
+    background-color: white;
+    color: #05253b;
 }
 
+
+/* MAIN CONTENT */
 #main {
     width: 80%;
+    background-color: lightblue;
 }
