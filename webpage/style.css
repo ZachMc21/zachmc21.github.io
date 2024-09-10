@@ -42,7 +42,7 @@ a:visited {
 }
 #title_inner h1 {
     margin-bottom: 0;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 #title_inner p {
     margin-top: 0;
@@ -58,7 +58,7 @@ a:visited {
     text-align: center;
     margin: auto;
     padding: 2.5% 0;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 #links .column img {
     max-width: 0.8em;
@@ -98,6 +98,7 @@ a:visited {
 #skills .column {
     float: left;
     text-align: left;
+    font-size: 1.5vw;
     margin: 1%;
     padding: 1%;
     background-color: rgb(203, 239, 252);
@@ -124,18 +125,53 @@ ul p {
 }
 
 /* Projects */
+.projects_menu {
+    width: 20%;
+    margin-top: 4%;
+}
+.projects_menu a {
+    display: block;
+    padding: 5%;
+    font-size: 2vw;
+    background-color: rgb(169, 199, 210);
+    color: #05253b;
+}
+.projects_menu a:hover {
+    background-color: rgb(203, 239, 252);
+}
+#projects_menu a.active {
+    text-decoration: underline;
+    border: 2% solid #05253b;    
+}
+div .project_content {
+    display: none;
+}
+#projects .project_content {
+    background-color: rgb(169, 199, 210);
+}
+#project_description {
+    text-decoration: italic;
+}
+#project_video {
+    margin: 0 auto;
+    width: 60%;
+}
+#project_skills {
+    margin: 0 auto;
+    width: 40%;
+}
 
 /* Personal life */
 #personal_life {
     margin: 5% auto;
     padding: 4%;
-    background-color: #BFCFD4;
+    background-color: rgb(169, 199, 210);
 }
 #personal_life p {
-    font-size: 2vw;
+    font-size: 1vw;
     text-align: center;
     margin: 0;
-    color: rgb(99, 99, 99);
+    color: #05253b;
 }
 #personal_life #intro {
     margin-bottom: 1em;
@@ -145,6 +181,6 @@ ul p {
 footer {
     color: rgb(203, 239, 252);
     background-color: #05253b;
-    font-size: 5%;
+    font-size: 3vw;
     font-style: italic;
 }
