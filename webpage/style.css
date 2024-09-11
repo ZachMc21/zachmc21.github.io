@@ -34,19 +34,19 @@ a:visited {
 #title_inner {
     margin: 0 auto;
     width: 75%;
-    height: 60%;
     padding: 5%;
+    padding-bottom: 4%;
     text-align: center;
     background-color: white;
     color: #05253b;
 }
 #title_inner h1 {
-    margin-bottom: 0;
+    margin-bottom: 1vw;
     font-size: 3vw;
 }
 #title_inner p {
     margin-top: 0;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 /* LINKS SECTION */
@@ -59,7 +59,7 @@ a:visited {
     text-align: center;
     margin: auto;
     padding: 2.5% 0;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 #links .column img {
     max-width: 0.8em;
@@ -199,4 +199,8 @@ footer p {
     font-size: 1vw;
     font-style: italic;
     text-align: center;
+}
+
+/* TODO Restructure for mobile displays - screen width <= 480px */
+@media (max-width: 480px) {
 }
