@@ -42,11 +42,11 @@ a:visited {
 }
 #title_inner h1 {
     margin-bottom: 0;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 #title_inner p {
     margin-top: 0;
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 
 /* LINKS SECTION */
@@ -59,7 +59,7 @@ a:visited {
     text-align: center;
     margin: auto;
     padding: 2.5% 0;
-    font-size: 2vw;
+    font-size: 1.25vw;
 }
 #links .column img {
     max-width: 0.8em;
@@ -78,7 +78,7 @@ a:visited {
     width: 90%;
     height: 40%;
     padding: 2% 5%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
     background-color: white;
     color: #05253b;
@@ -134,7 +134,7 @@ ul p {
 .projects_menu a {
     display: block;
     padding: 5%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-color: rgb(169, 199, 210);
     color: #05253b;
 }
@@ -178,15 +178,15 @@ div .project_content {
     padding: 4%;
     background-color: rgb(169, 199, 210);
 }
-#personal_life p {
+#personal_life #intro {
     font-size: 1.5vw;
+    margin-bottom: 1em;
+}
+#personal_life p {
+    font-size: 1vw;
     text-align: center;
     margin: 0;
     color: #05253b;
-}
-#personal_life #intro {
-    font-size: 2vw;
-    margin-bottom: 1em;
 }
 
 /* FOOTER */
@@ -196,7 +196,7 @@ footer p {
     width: 100%;
     background-color: #05253b;
     color: rgb(203, 239, 252);
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-style: italic;
     text-align: center;
 }
