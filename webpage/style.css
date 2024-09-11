@@ -127,21 +127,21 @@ ul p {
 }
 
 /* Projects */
-.projects_menu {
+#projects_menu {
     width: 20%;
     margin-top: 4%;
 }
-.projects_menu a {
+#projects_menu a {
     display: block;
     padding: 5%;
     font-size: 1.5vw;
     background-color: rgb(169, 199, 210);
     color: #05253b;
 }
-.projects_menu a:hover {
+#projects_menu a:hover {
     background-color: rgb(203, 239, 252);
 }
-.projects_menu a.active {
+#projects_menu a.active {
     text-decoration: underline;
     border: 2% solid #05253b;    
 }
@@ -160,11 +160,11 @@ div .project_content {
     margin: 0 auto;
     width: 60%;
 }
-#project_video p {
+.project_content #placeholder {
     text-align: center;
     font-style: italic;
     border-style: solid;
-    border-width: 3vw;
+    border-width: 0.5vw;
     border-color: #05253b;
 }
 #project_skills {
