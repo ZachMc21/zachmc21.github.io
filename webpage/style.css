@@ -190,9 +190,13 @@ div .project_content {
 }
 
 /* FOOTER */
-footer {
-    color: rgb(203, 239, 252);
+footer p {
+    margin: 0 auto;
+    padding: 1vw 0;
+    width: 100%;
     background-color: #05253b;
-    font-size: 3vw;
+    color: rgb(203, 239, 252);
+    font-size: 1.5vw;
     font-style: italic;
+    text-align: center;
 }
