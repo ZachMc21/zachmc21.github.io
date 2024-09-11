@@ -81,16 +81,18 @@
         <!-- Database, dropdown to show projects by skillset -->
         <div id="projects">
             <div class="projects_menu">
-                <a id="swe" onclick="swe">Software Engineering</a>
-                <a id="webdev" onclick="webdev">Web Development</a>
-                <a id="data" onclick="data">Data Analysis & Visualization</a>
-                <a id="database" onclick="database">Databases</a>
-                <a id="gamedev" onclick="gamedev">Game Development</a>
+                <a id="swe" onclick="swe()">Software Engineering</a>
+                <a id="webdev" onclick="webdev()">Web Development</a>
+                <a id="data" onclick="data()">Data Analysis & Visualization</a>
+                <a id="database" onclick="database()">Databases</a>
+                <a id="gamedev" onclick="gamedev()">Game Development</a>
             </div>
 
             <div class="project_content" id="swe_content">
                 <p id="project_description"> Major software projects (academic and personal) </p>
-                <div id="project_video"></div>
+                <div id="project_video">
+                    <p id="placeholder">  Coming soon! </p>
+                </div>
                 <div id="project_skills"></div>
             </div>
 
@@ -104,7 +106,7 @@
                 <div id="project_skills"></div>
             </div>
 
-            <div class="project_content" id="data_analysis_content">
+            <div class="project_content" id="data_content">
                 <p id="project_description"> Processing data files, calculations and categories, and visualizations </p>
                 <div id="project_video"></div>
                 <div id="project_skills"></div>
