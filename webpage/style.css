@@ -146,15 +146,15 @@ ul p {
 #projects_menu a:hover {
     background-color: var(--gray-blue);
 }
-#projects_menu a.active {
-    text-decoration: underline;
-    border: 2% solid var(--navy-blue);    
+#projects_menu .active {
+    border: 5% solid var(--navy-blue);    
 }
 div .project_content {
     margin: 0 auto;
     display: flex;
 }
 #projects div.project_content {
+    display: block;
     background-color: var(--light-blue);
 }
 #project_description {
