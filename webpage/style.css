@@ -1,6 +1,11 @@
 /* Selectors cheat sheet: https://dev.to/dawnind/css3-selectors-cheat-sheet-6dk */
 
 /* PAGE-WIDE */
+:root {
+    --navy-blue: rgb(5, 37, 59);
+    --gray-blue: rgb(203, 239, 252);
+    --light-blue: rgb(169, 199, 210);
+}
 * {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -38,7 +43,7 @@ a:visited {
     padding-bottom: 4%;
     text-align: center;
     background-color: white;
-    color: #05253b;
+    color: var(--navy-blue);
 }
 #title_inner h1 {
     margin-bottom: 1vw;
@@ -81,7 +86,7 @@ a:visited {
     font-size: 1.5vw;
     text-align: center;
     background-color: white;
-    color: #05253b;
+    color: var(--navy-blue);
 }
 
 
@@ -103,7 +108,7 @@ a:visited {
     font-size: 1.5vw;
     margin: 1%;
     padding: 1%;
-    background-color: rgb(203, 239, 252);
+    background-color: var(--gray-blue);
 }
 #skills #languages {
     width: 26%;
@@ -135,22 +140,22 @@ ul p {
     display: block;
     padding: 5%;
     font-size: 1.5vw;
-    background-color: rgb(169, 199, 210);
-    color: #05253b;
+    background-color: var(--light-blue);
+    color: var(--navy-blue);
 }
 #projects_menu a:hover {
-    background-color: rgb(203, 239, 252);
+    background-color: var(--gray-blue);
 }
 #projects_menu a.active {
     text-decoration: underline;
-    border: 2% solid #05253b;    
+    border: 2% solid var(--navy-blue);    
 }
 div .project_content {
     margin: 0 auto;
     display: flex;
 }
 #projects div.project_content {
-    background-color: #a9c7d2;
+    background-color: var(--light-blue);
 }
 #project_description {
     text-align: center;
@@ -165,7 +170,7 @@ div .project_content {
     font-style: italic;
     border-style: solid;
     border-width: 0.5vw;
-    border-color: #05253b;
+    border-color: var(--navy-blue);
 }
 #project_skills {
     margin: 0 auto;
@@ -176,7 +181,7 @@ div .project_content {
 #personal_life {
     margin: 5% auto;
     padding: 4%;
-    background-color: rgb(169, 199, 210);
+    background-color: var(--light-blue);
 }
 #personal_life #intro {
     font-size: 1.5vw;
@@ -186,7 +191,7 @@ div .project_content {
     font-size: 1vw;
     text-align: center;
     margin: 0;
-    color: #05253b;
+    color: var(--navy-blue);
 }
 
 /* FOOTER */
@@ -194,8 +199,8 @@ footer p {
     margin: 0 auto;
     padding: 1vw 0;
     width: 100%;
-    background-color: #05253b;
-    color: rgb(203, 239, 252);
+    background-color: var(--navy-blue);
+    color: var(--gray-blue);
     font-size: 1vw;
     font-style: italic;
     text-align: center;
