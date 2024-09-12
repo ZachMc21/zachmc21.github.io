@@ -5,9 +5,10 @@ let project_menu_names = ["swe", "webdev", "data", "database", "gamedev"]
 let project_content_names = ["swe_content", "webdev_content", "data_content", "database_content", "gamedev_content"]
 const num_project_categories = project_menu_names.length;
 
+/*
 window.onload = function() { reset_displayed_content() };
 
-/*
+
 function show_content(element) {
     reset_displayed_content();
 
