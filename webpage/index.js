@@ -40,7 +40,6 @@ function resetProjectContent() {
 
 function setActiveMenu(menuItem) {
     menuItem.classList.add("active");
-    menuItem.style.border = '2% dotted var(--navy-blue)';
 }
 
 function setActiveContent(contentItem) {

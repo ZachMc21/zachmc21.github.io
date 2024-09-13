@@ -151,17 +151,13 @@ ul p {
 #project_menu a:hover {
     background-color: var(--gray-blue);
 }
-#project_menu > .active {
-    /* This isn't displaying */
+/* TODO This isn't displaying */
+#project_menu a.active {
     border: 2% dotted var(--navy-blue);
 }
 .project_content {
     width: 85%;
     background-color: var(--light-blue);
-}
-#project_description {
-    text-align: center;
-    font-style: italic;
 }
 .project_content #placeholder {
     display: flex;
@@ -172,9 +168,44 @@ ul p {
     text-align: center;
     border: 0.25vw solid var(--navy-blue);
 }
-#placeholder p {
+.project_content #placeholder p {
     font-size: 2vw;
     font-style: italic;
+}
+.project_description {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+}
+.project_skills {
+    margin: 0 auto;
+    display: flex;
+}
+.project_skills .column {
+    float: left;
+}
+.project_skills .column #left {
+    margin-left: 0;
+    width: 50%
+}
+.project_skills .column #right {
+    margin-right: 0;
+    width: 50%
+}
+.project_skills ul {
+    list-style: none;
+}
+.project_skills ul li {
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 1.5vw;
+}
+.project_skills ul li:before {
+    content: ">";
+}
+.what_i_learned p {
+    padding: 0 10%;
+    text-align: center;
+    font-size: 1.5vw;
 }
 
 /* Personal life */
