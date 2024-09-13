@@ -5,10 +5,11 @@ let project_menu_names = ["swe", "webdev", "data", "database", "gamedev"]
 let project_content_names = ["swe_content", "webdev_content", "data_content", "database_content", "gamedev_content"]
 const num_project_categories = project_menu_names.length;
 
-/*
+
 window.onload = function() { reset_displayed_content() };
 
 
+// TODO: rework with cleaner text/element_name management
 function show_content(element) {
     reset_displayed_content();
 
@@ -40,7 +41,6 @@ function reset_displayed_content() {
 //Projects - Software Engineering
 function swe() {
     var content = document.getElementById("swe_content");
-    //This function is not getting called for some reason
     document.getElementById("swe").onclick = function() { show_content(content) };
 }
 
@@ -50,13 +50,11 @@ function webdev() {
     document.getElementById("webdev").onclick = function() { show_content(content) };
 }
 
-
 //Projects - Data Analysis & Visualization
 function data() {
     var content = document.getElementById("data_content");
     document.getElementById("data").onclick = function() { show_content(content) };
 }
-
 
 //Projects - Databases
 function database() {
@@ -64,10 +62,8 @@ function database() {
     document.getElementById("database").onclick = function() { show_content(content) };
 }
 
-
 //Projects - Game Development
 function gamedev() {
     var content = document.getElementById("gamedev_content");
     document.getElementById("gamedev").onclick = function() { show_content(content) };
 }
-*/
