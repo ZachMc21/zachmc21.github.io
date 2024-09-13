@@ -111,14 +111,14 @@ a:visited {
     background-color: var(--gray-blue);
 }
 #skills #languages {
-    width: 26%;
+    width: 33.33%;
     margin-left: 0;
 }
 #skills #web {
-    width: 26%;
+    width: 33.33%;
 }
 #skills #other {
-    width: 40%;
+    width: 33.33%;
     margin-right: 0;
 }
 #skills:after {    /* Clear floats after the columns */
@@ -129,6 +129,8 @@ a:visited {
 ul p {
     margin: 0;
     margin-left: 5%;
+    font-size: 1.5vw;
+    font-style: italic;
 }
 
 /* Projects */
