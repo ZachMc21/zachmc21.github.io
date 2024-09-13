@@ -110,14 +110,14 @@ a:visited {
     padding: 1%;
     background-color: var(--gray-blue);
 }
-#skills #swe {
+#skills #swe_skills {
     width: 33.33%;
     margin-left: 0;
 }
-#skills #web {
+#skills #web_skills {
     width: 33.33%;
 }
-#skills #other {
+#skills #other_skills {
     width: 33.33%;
     margin-right: 0;
 }
@@ -138,20 +138,20 @@ ul p {
     display: flex;
     margin-top: 4%;
 }
-#projects_menu {
+#project_menu {
     width: 20%;
 }
-#projects_menu a {
+#project_menu a {
     display: block;
     padding: 5% 10% 5% 10%;
     font-size: 1.5vw;
     background-color: var(--light-blue);
     color: var(--navy-blue);
 }
-#projects_menu a:hover {
+#project_menu a:hover {
     background-color: var(--gray-blue);
 }
-#projects_menu .active {
+#project_menu .active {
     /* This isn't displaying */
     outline: 2% solid var(--navy-blue);
 }
