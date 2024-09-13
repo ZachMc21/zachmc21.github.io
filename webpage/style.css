@@ -237,6 +237,9 @@ footer p {
     text-align: center;
 }
 
-/* TODO Restructure for mobile displays - screen width <= 480px */
+/* TODO Restructure for mobile displays - screen width <= 480px
+- Skills columns condense into one
+- Left projects menu becomes dropdown, project content shows below
+*/
 @media (max-width: 480px) {
 }
