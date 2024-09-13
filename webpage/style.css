@@ -151,9 +151,9 @@ ul p {
 #project_menu a:hover {
     background-color: var(--gray-blue);
 }
-#project_menu .active {
+#project_menu > .active {
     /* This isn't displaying */
-    outline: 2% solid var(--navy-blue);
+    border: 2% dotted var(--navy-blue);
 }
 .project_content {
     width: 85%;
@@ -164,12 +164,17 @@ ul p {
     font-style: italic;
 }
 .project_content #placeholder {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
     margin: 5%;
     padding: 20%;
     text-align: center;
+    border: 0.25vw solid var(--navy-blue);
+}
+#placeholder p {
     font-size: 2vw;
     font-style: italic;
-    border: 0.25vw  solid var(--navy-blue);
 }
 
 /* Personal life */
