@@ -262,6 +262,7 @@ p.project_title {
 #personal_life #intro {
     font-size: 1.5vw;
     margin-bottom: 1em;
+    font-style: italic;
 }
 #personal_life p {
     font-size: 1.25vw;
