@@ -155,11 +155,11 @@ ul p {
 #project_menu a.active {
     border: 2% dotted var(--navy-blue);
 }
-.project_content {
+.project_container {
     width: 85%;
     background-color: var(--light-blue);
 }
-.project_content .placeholder {
+.placeholder, .placeholder_video {
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -168,21 +168,38 @@ ul p {
     text-align: center;
     border: 0.25vw solid var(--navy-blue);
 }
-.project_content .placeholder p {
+.project_container .placeholder p {
     font-size: 2vw;
     font-style: italic;
 }
-.project_description {
+.video_skills_container {
+    display: flex;
+    align-items: center;
+}
+.video_skills_container .placeholder_video {
+    margin-top: 0;
+    padding: 5%;
+    width: 50%;
+}
+.video_skills_container .project_skills {
+    padding: 0 5% 5% 0;
+    width: 50%;
+}
+/* TODO remove gap between description and skills */
+p.project_title {
     text-align: center;
     font-weight: bold;
     font-size: 2vw;
+    padding-bottom: 0;
+}
+.project_divider ~ .project_content > .project_title {
+    padding-top: 3s%;
 }
 .project_skills {
     margin: 0 auto;
     display: flex;
-}
-.project_skills .column {
-    width: 50%;
+    align-items: center;
+    list-style-position: outside;
 }
 .project_skills #left {
     float: left;
@@ -193,10 +210,14 @@ ul p {
     float: right;
     width: 70%
 }
+.project_skills ul {
+    padding-left: 0;
+}
 .project_skills ul li {
     font-family: "Lucida Console", Courier, monospace;
     list-style-type: none;
     font-size: 1.5vw;
+    line-height: 1.2;
 }
 .project_skills ul li:before {
     content: ">";
@@ -209,7 +230,9 @@ ul p {
 .project_divider {
     display: flex;
     justify-content: center;
-    padding: 3%;
+    margin: 5%;
+    padding: 2%;
+    background-color: var(--gray-blue);
 }
 .project_divider img {
     width: 20%;

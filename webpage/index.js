@@ -10,7 +10,7 @@ window.onload = function() {
     //Initialize global variables
     projectMenu = document.getElementById("project_menu");
     projectMenuLinks = projectMenu.children;
-    projectContentList = document.getElementsByClassName("project_content");
+    projectContentList = document.getElementsByClassName("project_container");
     numProjectCategories = projectMenuLinks.length;
 
     //Add an event listener to each item in projectMenuLinks
