@@ -182,21 +182,20 @@ ul p {
     display: flex;
 }
 .project_skills .column {
+    padding-left: 5%;
+    width: 50%;
+}
+.project_skills #left {
     float: left;
+    width: 30%
 }
-.project_skills .column #left {
-    margin-left: 0;
-    width: 50%
-}
-.project_skills .column #right {
-    margin-right: 0;
-    width: 50%
-}
-.project_skills ul {
-    list-style: none;
+.project_skills #right {
+    float: right;
+    width: 70%
 }
 .project_skills ul li {
     font-family: "Lucida Console", Courier, monospace;
+    list-style-type: none;
     font-size: 1.5vw;
 }
 .project_skills ul li:before {
