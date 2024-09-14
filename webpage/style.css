@@ -87,6 +87,7 @@ a:visited {
     text-align: center;
     background-color: white;
     color: var(--navy-blue);
+    font-style: italic;
 }
 
 
