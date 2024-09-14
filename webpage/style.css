@@ -153,9 +153,6 @@ ul p {
 #project_menu a:hover {
     background-color: var(--gray-blue);
 }
-/* TODO This isn't displaying */
-#project_menu a.active {
-}
 .project_container {
     width: 76%;
     padding: 3%;
@@ -236,6 +233,9 @@ p.project_title {
     margin: 5%;
     padding: 2%;
     background-color: var(--gray-blue);
+}
+.project_divider#end {
+    margin-bottom: 0;
 }
 .project_divider img {
     width: 20%;
