@@ -159,7 +159,7 @@ ul p {
     width: 85%;
     background-color: var(--light-blue);
 }
-.project_content #placeholder {
+.project_content .placeholder {
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -168,7 +168,7 @@ ul p {
     text-align: center;
     border: 0.25vw solid var(--navy-blue);
 }
-.project_content #placeholder p {
+.project_content .placeholder p {
     font-size: 2vw;
     font-style: italic;
 }
@@ -182,11 +182,11 @@ ul p {
     display: flex;
 }
 .project_skills .column {
-    padding-left: 5%;
     width: 50%;
 }
 .project_skills #left {
     float: left;
+    padding-left: 10%;
     width: 30%
 }
 .project_skills #right {
@@ -205,6 +205,14 @@ ul p {
     padding: 0 10%;
     text-align: center;
     font-size: 1.5vw;
+}
+.project_divider {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+.project_divider img {
+    width: 20%;
 }
 
 /* Personal life */
