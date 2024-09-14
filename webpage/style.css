@@ -179,11 +179,11 @@ ul p {
 .video_skills_container .placeholder_video {
     margin-top: 0;
     padding: 5%;
-    width: 50%;
+    width: 55%;
 }
 .video_skills_container .project_skills {
     padding: 0 5% 5% 0;
-    width: 50%;
+    width: 45%;
 }
 /* TODO remove gap between description and skills */
 p.project_title {
@@ -193,7 +193,7 @@ p.project_title {
     padding-bottom: 0;
 }
 .project_divider ~ .project_content > .project_title {
-    padding-top: 3s%;
+    padding-top: 3%;
 }
 .project_skills {
     margin: 0 auto;
