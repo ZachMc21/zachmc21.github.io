@@ -167,19 +167,20 @@ ul p {
     padding: 20%;
     text-align: center;
     border: 0.25vw solid var(--navy-blue);
-}
-.project_container .placeholder p {
-    font-size: 2vw;
     font-style: italic;
+    font-size: 2vw;
 }
 .video_skills_container {
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    width: 90%;
 }
 .video_skills_container .placeholder_video {
     margin-top: 0;
     padding: 5%;
     width: 55%;
+    font-size: 1.5vw;
 }
 .video_skills_container .project_skills {
     padding: 0 5% 5% 0;
@@ -249,7 +250,7 @@ p.project_title {
     margin-bottom: 1em;
 }
 #personal_life p {
-    font-size: 1vw;
+    font-size: 1.25vw;
     text-align: center;
     margin: 0;
     color: var(--navy-blue);
@@ -268,7 +269,7 @@ footer p {
 }
 
 /* TODO Restructure for mobile displays - screen width <= 480px
-- Skills columns condense into one
+- Skills columns combine into one
 - Left projects menu becomes dropdown, project content shows below
 */
 @media (max-width: 480px) {
