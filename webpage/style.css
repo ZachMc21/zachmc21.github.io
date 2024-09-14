@@ -157,6 +157,7 @@ ul p {
 }
 .project_container {
     width: 85%;
+    padding: 3%;
     background-color: var(--light-blue);
 }
 .placeholder, .placeholder_video {
@@ -237,6 +238,17 @@ p.project_title {
 }
 .project_divider img {
     width: 20%;
+}
+
+#hackerrank_link {
+    text-align: center;
+    margin: auto;
+    padding: 2.5% 0;
+    font-size: 2vw;
+}
+#hackerrank_link img {
+    max-height: 0.8em;
+    width: auto;
 }
 
 /* Personal life */
