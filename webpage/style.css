@@ -243,6 +243,7 @@ p.project_title {
 }
 
 #hackerrank_link {
+    display: none;
     text-align: center;
     margin: auto;
     padding: 2.5% 0;
