@@ -10,7 +10,6 @@ Thank you for your time!
 <br/>
 
 Active backlog:
-- Add Clue project
 - Add images, code snippets, etc. to projects
 - Add art portfolio to projects
 - Animate #skills to fade in from bottom on scroll. Elements fade in individually from left to right
