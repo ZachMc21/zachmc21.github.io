@@ -290,3 +290,16 @@ footer p {
 */
 @media (max-width: 480px) {
 }
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}  
