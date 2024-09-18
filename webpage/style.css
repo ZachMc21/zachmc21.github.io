@@ -141,7 +141,7 @@ ul p {
     margin-top: 4%;
 }
 #project_menu {
-    width: 18%;
+    width: 20%;
 }
 #project_menu a {
     display: block;
@@ -155,7 +155,7 @@ ul p {
     background-color: var(--gray-blue);
 }
 .project_container {
-    width: 76%;
+    width: 75%;
     padding: 3%;
     background-color: var(--light-blue);
 }
