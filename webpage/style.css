@@ -203,10 +203,12 @@ h1.project_title {
 }
 .project_skills #left {
     float: left;
+    width: 33%;
 }
 .project_skills #right {
     float: right;
-    padding-left: 10%;
+    padding-left: 5%;
+    width: 72%;
 }
 .project_skills ul {
     padding-left: 0;
