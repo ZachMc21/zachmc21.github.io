@@ -60,7 +60,7 @@ a:visited {
     align-items: center;
 }
 #links .column {
-    width: 50%;
+    width: 30%;
     text-align: center;
     margin: auto;
     padding: 2.5% 0;
@@ -69,12 +69,6 @@ a:visited {
 #links .column img {
     max-width: 0.8em;
     height: auto;
-}
-#links #left {
-    padding-left: 20%;
-}
-#links #right {
-    padding-right: 20%;
 }
 
 /* Heading blurb */
@@ -186,7 +180,6 @@ ul p {
     padding: 0 5% 5% 0;
     width: 45%;
 }
-/* TODO remove gap between description and skills */
 p.project_title {
     text-align: center;
     font-weight: bold;
