@@ -180,7 +180,7 @@ ul p {
     padding: 0 5% 5% 0;
     width: 45%;
 }
-p.project_title {
+h1.project_title {
     text-align: center;
     font-weight: bold;
     font-size: 2vw;
