@@ -10,4 +10,7 @@ Thank you for your time!
 <br/>
 
 Active backlog:
+- Add Smart Barbell project to SWE content
+- Add images, code snippets, etc. to projects
+- Add art portfolio to projects
 - Animate #skills to fade in from bottom on scroll. Elements fade in individually from left to right
