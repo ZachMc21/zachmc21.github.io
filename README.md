@@ -11,5 +11,5 @@ Thank you for your time!
 
 Active backlog:
 - Add images, code snippets, etc. to projects
-- Add art portfolio to projects
+- Sticky footer
 - Animate #skills to fade in from bottom on scroll. Elements fade in individually from left to right
