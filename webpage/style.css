@@ -2,12 +2,15 @@
 
 /* PAGE-WIDE */
 :root {
-    --navy-blue: rgb(5, 37, 59);
+    --navy-blue: #091d3a;
     --gray-blue: rgb(203, 239, 252);
     --light-blue: rgb(169, 199, 210);
 }
 * {
     font-family: Helvetica, Arial, sans-serif;
+}
+body {
+    background-color: var(--navy-blue);
 }
 
 /* LINK STYLING */
@@ -35,6 +38,7 @@ a:visited {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5%;
+    box-shadow: 0 0 1vw 1vw var(--navy-blue) inset;
 }
 #title_inner {
     margin: 0 auto;
@@ -287,10 +291,10 @@ h1.project_title {
 
 /* FOOTER */
 footer p {
-    margin: 0 auto;
+    margin: 0;
     padding: 1vw 0;
     width: 100%;
-    background-color: var(--navy-blue);
+    background-color: #000000;
     color: var(--gray-blue);
     font-size: 1vw;
     font-style: italic;
