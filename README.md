@@ -12,6 +12,7 @@ Thank you for your time!
 <br/>
 
 Active backlog:
+- Divide project_menu links (to make it clearer that you can click on them)
 - Add images, code snippets, etc. to projects
 - When the user scrolls past the bottom of the page, footer background color does not continue
 - Animate #skills to fade in from bottom on scroll. Elements fade in individually from left to right

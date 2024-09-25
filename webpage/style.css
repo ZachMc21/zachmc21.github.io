@@ -82,12 +82,15 @@ a:visited {
     margin: 5% auto 0 auto;
     width: 80%;
     height: 40%;
-    padding: 2% 5%;
+    padding: 5% 5%;
     font-size: 1.5vw;
     text-align: center;
     background-color: var(--light-blue);
     color: var(--navy-blue);
     font-style: italic;
+}
+#whoami p ~ p {
+    margin-top: 2%;
 }
 
 
@@ -147,7 +150,7 @@ ul p {
     font-size: 1.5vw;
     background-color: var(--light-blue);
     color: var(--navy-blue);
-    border: 2% dotted var(--light-blue);
+    border: 2% solid var(--navy-blue);
 }
 #project_menu a:hover {
     background-color: var(--gray-blue);
@@ -187,7 +190,7 @@ ul p {
 h1.project_title {
     text-align: center;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 5vh;
 }
 .project_desc p {
