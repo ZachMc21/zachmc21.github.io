@@ -5,6 +5,7 @@
     --navy-blue: #091d3a;
     --gray-blue: rgb(169, 199, 210);
     --light-blue: rgb(203, 239, 252);
+    --dark-gray: rgb(79, 79, 79);
 }
 * {
     font-family: Helvetica, Arial, sans-serif;
@@ -150,7 +151,11 @@ ul p {
     font-size: 1.5vw;
     background-color: var(--light-blue);
     color: var(--navy-blue);
-    border: 2% solid var(--navy-blue);
+    border: var(--navy-blue) 2px solid;
+    border-top: 0;
+}
+#project_menu a:last-of-type {
+    border-bottom: none;
 }
 #project_menu a:hover {
     background-color: var(--gray-blue);
@@ -167,9 +172,9 @@ ul p {
     margin: 5%;
     padding: 20%;
     text-align: center;
-    border: 0.25vw solid var(--navy-blue);
     font-style: italic;
     font-size: 2vw;
+    color: var(--dark-gray);
 }
 .video_skills_container {
     display: flex;
@@ -293,7 +298,7 @@ h1.project_title {
 #personal_life p {
     font-size: 1.25vw;
     text-align: center;
-    line-height: 1.25em;
+    line-height: 1.25vw;
     color: var(--navy-blue);
 }
 
@@ -318,7 +323,7 @@ footer p {
 
 /* ANIMATIONS */
 .fade-in {
-    animation: fadeIn 1s;
+    animation: fadeIn 0.75s;
 }
 @keyframes fadeIn {
     0% {
