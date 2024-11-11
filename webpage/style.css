@@ -303,11 +303,14 @@ h1.project_title {
 }
 
 /* FOOTER */
-footer p {
+footer {
     margin: 0;
     padding: 1vw 0;
     width: 100%;
     background-color: #000000;
+}
+
+footer p {
     color: var(--light-blue);
     font-size: 0.8vw;
     font-style: italic;
