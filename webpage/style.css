@@ -190,8 +190,8 @@ ul p {
 h1.project_title {
     text-align: center;
     font-weight: bold;
-    font-size: 2.5em;
-    padding: 5vh;
+    font-size: 2.5vw;
+    padding: 3vw;
 }
 .project_desc p {
     padding: 1% 10%;
@@ -215,7 +215,6 @@ h1.project_title {
 }
 .project_skills #right {
     float: right;
-    padding-left: 5%;
     width: 72%;
 }
 .project_skills ul {
@@ -244,8 +243,8 @@ h1.project_title {
 }
 .what_i_learned p {
     padding: 0 10% 2% 10%;
-    font-size: 1.25em;
-    line-height: 1.25em;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
     text-align: center;
     font-style: italic;
 }
