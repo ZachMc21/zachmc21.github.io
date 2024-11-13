@@ -129,6 +129,9 @@ a:visited {
     display: table;
     clear: both;
 }
+ul {
+    padding-inline-start: 5%;
+}
 ul p {
     margin: 0;
     margin-left: 7.5%;
@@ -216,14 +219,15 @@ h1.project_title {
 }
 .project_skills #left {
     float: left;
-    width: 33%;
+    width: 35%;
 }
 .project_skills #right {
     float: right;
-    width: 72%;
+    width: 65%;
 }
 .project_skills ul {
     padding-left: 0;
+    padding-right: 0;
 }
 .project_skills ul li {
     font-family: "Lucida Console", Courier, monospace;
@@ -304,6 +308,7 @@ h1.project_title {
 
 /* FOOTER */
 footer {
+    position: sticky;
     margin: 0;
     padding: 1vw 0;
     width: 100%;
