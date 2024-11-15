@@ -36,7 +36,7 @@ a:visited {
     width: 94%;
 }
 #title {
-    background-image: url('./webpage/images/backgrounds/header.jpg');
+    background-image: url('./images/backgrounds/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5%;
