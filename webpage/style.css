@@ -304,7 +304,7 @@ h1.project_title {
 #personal_life p {
     font-size: 1.25vw;
     text-align: center;
-    line-height: 1.25vw;
+    line-height: 1.5vw;
     color: var(--navy-blue);
 }
 
@@ -342,4 +342,4 @@ footer p {
     100% {
         opacity: 1;
     }
-}  
+}
