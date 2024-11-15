@@ -2,7 +2,7 @@
 
 Hello! This is the personal portfolio page for Zach Magloughlin.
 
-If you are a recruiter or interviewer, feel free to download to take a look! Included in this project are showcases of other projects.
+This project is a built-from-scratch webpage that showcases previous projects and their stack and outcomes, and also functions as a second resume.
 
 Please note: this webpage is a bit "quick and dirty." I wanted to get something together to have my projects in one place, so advanced styling and animations have been set to the side for now.
 
