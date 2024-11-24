@@ -28,7 +28,6 @@ a:visited {
     color: gray;
 }
 
-
 /* HEADER */
 #header {
     position: relative;
@@ -324,11 +323,31 @@ footer p {
     text-align: center;
 }
 
+
+
+
+
 /* TODO Restructure for mobile displays - screen width <= 480px
-- Skills columns combine into one
+- Skills columns center
 - Left projects menu becomes dropdown, project content shows below
 */
 @media (max-width: 480px) {
+    div.main {
+        width: 100%;
+    }
+
+    #skills {
+        margin: 0 auto;
+    }
+    #skills div {
+        width: 100%;
+    }
+    #skills #swe_skills {
+        margin: 0;
+    }
+    #skills #other_skills {
+        margin: 0;
+    }
 }
 
 /* ANIMATIONS */
