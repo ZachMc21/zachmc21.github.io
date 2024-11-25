@@ -13,10 +13,11 @@
         margin: 0 auto;
         margin-top: 4%;
     }
+
     #project_menu a {
         display: block;
         padding: 5% 5%;
-        font-size: 1rem;
+        font-size: 1.5rem;
         background-color: v.$light-blue;
         color: v.$navy-blue;
         border: v.$navy-blue 2px solid;
@@ -28,6 +29,7 @@
     #project_menu a:hover {
         background-color: v.$gray-blue;
     }
+
     .project_container {
         width: 70%;
         padding: 3%;
@@ -47,13 +49,13 @@
     h1.project_title {
         text-align: center;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 1rem;
     }
     .project_desc p {
         padding: 1% 10%;
         text-align: center;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     .project_divider ~ .project_content > .project_title {
         padding-top: 3%;
@@ -83,7 +85,7 @@
     .project_skills ul li {
         font-family: "Lucida Console", Courier, monospace;
         list-style-type: none;
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 1.2;
     }
     .project_skills ul li:before {
@@ -91,21 +93,22 @@
     }
 
     .takeaways {
+        border: 2% solid v.$navy-blue;
         margin: 2% auto;
         width: 90%;
     }
     .takeaways h1 {
         text-align: center;
-        text-decoration: underline rgb(5, 37, 59);
-        font-size: 1.25rem;
+        text-decoration: underline v.$navy-blue;    //Why isn't this border working?
+        font-size: 1.5rem;
         margin-top: 5%;
         margin-bottom: 3%;
         font-weight: normal;
     }
     .takeaways p {
-        padding: 0 10% 2% 10%;
+        padding-bottom: 0.75rem;
         font-size: 1rem;
-        line-height: 1rem;
+        line-height: 1.25rem;
         text-align: center;
         font-style: italic;
     }
