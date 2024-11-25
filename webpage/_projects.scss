@@ -1,0 +1,149 @@
+@use "variables" as v;
+
+/* Projects */
+#projects {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+#project_menu {
+    width: 19%;
+}
+#project_menu a {
+    display: block;
+    padding: 5% 10%;
+    font-size: 1.5vw;
+    background-color: v.$light-blue;
+    color: v.$navy-blue;
+    border: v.$navy-blue 2px solid;
+    border-top: 0;
+}
+#project_menu a:last-of-type {
+    border-bottom: none;
+}
+#project_menu a:hover {
+    background-color: v.$gray-blue;
+}
+.project_container {
+    width: 75%;
+    padding: 3%;
+    background-color: v.$light-blue;
+}
+.placeholder, .placeholder_video {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 5%;
+    padding: 20%;
+    text-align: center;
+    font-style: italic;
+    font-size: 2vw;
+    color: v.$dark-gray;
+}
+/*
+.video_skills_container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+.video_skills_container .placeholder_video {
+    margin-top: 0;
+    padding: 5%;
+    width: 55%;
+    font-size: 1.5vw;
+}
+.video_skills_container .project_skills {
+    padding: 0 5% 5% 0;
+    width: 45%;
+}
+*/
+h1.project_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 3vw;
+}
+.project_desc p {
+    padding: 1% 10%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.project_divider ~ .project_content > .project_title {
+    padding-top: 3%;
+}
+.project_skills {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    padding-top: 5%;
+    align-items: center;
+    list-style-position: outside;
+}
+.project_skills #left {
+    float: left;
+    width: 35%;
+}
+.project_skills #right {
+    float: right;
+    width: 65%;
+}
+.project_skills ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+.project_skills ul li {
+    font-family: "Lucida Console", Courier, monospace;
+    list-style-type: none;
+    font-size: 1.5vw;
+    line-height: 1.2;
+}
+.project_skills ul li:before {
+    content: ">";
+}
+.what_i_learned {
+    margin: 2% auto;
+    width: 80%;
+}
+.what_i_learned h1 {
+    text-align: center;
+    text-decoration: underline rgb(5, 37, 59);
+    font-size: 1.75vw;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-weight: normal;
+}
+.what_i_learned p {
+    padding: 0 10% 2% 10%;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    text-align: center;
+    font-style: italic;
+}
+.project_divider {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    padding: 2%;
+    background-color: v.$gray-blue;
+}
+.project_divider#end {
+    margin-bottom: 0;
+}
+.project_divider img {
+    width: 20%;
+}
+
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fadeIn 0.75s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
