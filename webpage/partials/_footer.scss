@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "../variables" as v;
 
 /* FOOTER */
 footer {
@@ -11,7 +11,7 @@ footer {
 
 footer p {
     color: v.$light-blue;
-    font-size: 0.8vw;
+    font-size: 0.5rem;
     font-style: italic;
     text-align: center;
 }

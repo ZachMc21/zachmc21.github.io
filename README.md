@@ -13,9 +13,10 @@ Thank you for your time!
 
 Active backlog:
 - Add images, code snippets, etc. to projects
-- When the user scrolls past the bottom of the page, footer background color does not continue
 - Animate #skills to fade in from bottom on scroll. Elements fade in individually from left to right
-- Mobile-responsive display - refactor with SASS?
-    - Continue from Partials heading here https://www.freecodecamp.org/news/the-beginners-guide-to-sass/
-    - But use @use not @import
+    - https://vincoding.com/fade-in-elements-scroll-jquery/
+    - https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
+    - https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4
+- Mobile-responsive display
 - Change CSS selector for `<div class="project_divider fade-in" id="end">` to select the last div of that class type
+- When the user scrolls past the bottom of the page, footer background color does not continue

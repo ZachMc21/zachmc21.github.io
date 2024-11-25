@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   background-color: #091d3a;
 }
@@ -39,13 +43,13 @@ body {
 
 #title_inner h1 {
   margin-bottom: 1vw;
-  font-size: 3vw;
+  font-size: 4rem;
 }
 
 #title_inner p {
   margin-top: 0;
   margin-bottom: 1vw;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 
 /* LINKS SECTION */
@@ -59,29 +63,12 @@ body {
   text-align: center;
   margin: auto;
   padding: 2.5% 0;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 
 #links .column img {
   max-width: 0.8em;
   height: auto;
-}
-
-/* Heading blurb */
-#whoami {
-  margin: 5% auto 0 auto;
-  width: 80%;
-  height: 40%;
-  padding: 5% 5%;
-  font-size: 1.5vw;
-  text-align: center;
-  background-color: rgb(203, 239, 252);
-  color: #091d3a;
-  font-style: italic;
-}
-
-#whoami p ~ p {
-  margin-top: 2%;
 }
 
 /* LINK STYLING */
@@ -97,6 +84,23 @@ a:hover {
 
 a:visited {
   color: gray;
+}
+
+/* Heading blurb */
+#whoami {
+  margin: 5% auto 0 auto;
+  width: 80%;
+  height: 40%;
+  padding: 4%;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgb(203, 239, 252);
+  color: #091d3a;
+  font-style: italic;
+}
+
+#whoami p ~ p {
+  margin-top: 2%;
 }
 
 @media (max-width: 480px) {
@@ -128,7 +132,7 @@ a:visited {
 }
 #skills .column {
   text-align: left;
-  font-size: 1.5vw;
+  font-size: 1.25rem;
   margin: 1%;
   padding: 3%;
   background-color: rgb(203, 239, 252);
@@ -141,7 +145,7 @@ div#skills .column ul {
 div#skills .column ul p {
   margin: 0;
   margin-left: 7.5%;
-  font-size: 1.5vw;
+  font-size: 1.25rem;
   font-style: italic;
 }
 
@@ -153,8 +157,8 @@ div#skills .column ul p {
   }
   #project_menu a {
     display: block;
-    padding: 5% 10%;
-    font-size: 1.5vw;
+    padding: 5% 5%;
+    font-size: 1rem;
     background-color: rgb(203, 239, 252);
     color: #091d3a;
     border: #091d3a 2px solid;
@@ -167,7 +171,7 @@ div#skills .column ul p {
     background-color: rgb(169, 199, 210);
   }
   .project_container {
-    width: 75%;
+    width: 70%;
     padding: 3%;
     background-color: rgb(203, 239, 252);
   }
@@ -179,19 +183,19 @@ div#skills .column ul p {
     padding: 20%;
     text-align: center;
     font-style: italic;
-    font-size: 2vw;
+    font-size: 1.25rem;
     color: rgb(79, 79, 79);
   }
   h1.project_title {
     text-align: center;
     font-weight: bold;
-    font-size: 2.5vw;
-    padding: 3vw;
+    font-size: 2rem;
+    padding: 1rem;
   }
   .project_desc p {
     padding: 1% 10%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.25rem;
   }
   .project_divider ~ .project_content > .project_title {
     padding-top: 3%;
@@ -219,28 +223,28 @@ div#skills .column ul p {
   .project_skills ul li {
     font-family: "Lucida Console", Courier, monospace;
     list-style-type: none;
-    font-size: 1.5vw;
+    font-size: 1rem;
     line-height: 1.2;
   }
   .project_skills ul li:before {
     content: ">";
   }
-  .what_i_learned {
+  .takeaways {
     margin: 2% auto;
-    width: 80%;
+    width: 90%;
   }
-  .what_i_learned h1 {
+  .takeaways h1 {
     text-align: center;
     text-decoration: underline rgb(5, 37, 59);
-    font-size: 1.75vw;
+    font-size: 1.25rem;
     margin-top: 5%;
     margin-bottom: 3%;
     font-weight: normal;
   }
-  .what_i_learned p {
+  .takeaways p {
     padding: 0 10% 2% 10%;
-    font-size: 1.25vw;
-    line-height: 1.25vw;
+    font-size: 1rem;
+    line-height: 1rem;
     text-align: center;
     font-style: italic;
   }
@@ -284,7 +288,7 @@ div#skills .column ul p {
 
 #personal_life h1 {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-style: italic;
   margin-bottom: 1%;
 }
@@ -294,9 +298,9 @@ div#skills .column ul p {
 }
 
 #personal_life p {
-  font-size: 1.25vw;
+  font-size: 1rem;
   text-align: center;
-  line-height: 1.5vw;
+  line-height: 1.25rem;
   color: #091d3a;
 }
 
@@ -311,7 +315,7 @@ footer {
 
 footer p {
   color: rgb(203, 239, 252);
-  font-size: 0.8vw;
+  font-size: 0.5rem;
   font-style: italic;
   text-align: center;
 }
