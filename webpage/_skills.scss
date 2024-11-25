@@ -1,37 +1,48 @@
 @use "variables" as v;
 
-/* Skills section - 3 columns */
-#skills {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+//Mobile
+@media (max-width: 480px) {
+    div #skills {
+        display: block;
+        margin: 0 auto;
+    }
 }
+
+//Tablet & Desktop
+@media (min-width: 481px) { 
+    #skills {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    #skills div {
+        width: 33.33%;
+    }
+    #skills div#swe_skills {
+        margin-left: 0;
+    }
+    #skills div#other_skills {
+        margin-right: 0;
+    }
+    #skills:after {    /* Clear floats after the columns */
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 #skills .column {
-    float: left;
     text-align: left;
     font-size: 1.5vw;
     margin: 1%;
     padding: 3%;
     background-color: v.$light-blue;
 }
-#skills div {
-    width: 33.33%;
-}
-#skills #swe_skills {
-    margin-left: 0;
-}
-#skills #other_skills {
-    margin-right: 0;
-}
-#skills:after {    /* Clear floats after the columns */
-    content: "";
-    display: table;
-    clear: both;
-}
-ul {
+
+div#skills .column ul {
     padding-inline-start: 5%;
 }
-ul p {
+div#skills .column ul p {
     margin: 0;
     margin-left: 7.5%;
     font-size: 1.5vw;

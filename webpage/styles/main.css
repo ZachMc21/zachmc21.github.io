@@ -99,15 +99,34 @@ a:visited {
   color: gray;
 }
 
-/* Skills section - 3 columns */
-#skills {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+@media (max-width: 480px) {
+  div #skills {
+    display: block;
+    margin: 0 auto;
+  }
 }
-
+@media (min-width: 481px) {
+  #skills {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  #skills div {
+    width: 33.33%;
+  }
+  #skills div#swe_skills {
+    margin-left: 0;
+  }
+  #skills div#other_skills {
+    margin-right: 0;
+  }
+  #skills:after { /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 #skills .column {
-  float: left;
   text-align: left;
   font-size: 1.5vw;
   margin: 1%;
@@ -115,174 +134,117 @@ a:visited {
   background-color: rgb(203, 239, 252);
 }
 
-#skills div {
-  width: 33.33%;
-}
-
-#skills #swe_skills {
-  margin-left: 0;
-}
-
-#skills #other_skills {
-  margin-right: 0;
-}
-
-#skills:after { /* Clear floats after the columns */
-  content: "";
-  display: table;
-  clear: both;
-}
-
-ul {
+div#skills .column ul {
   padding-inline-start: 5%;
 }
 
-ul p {
+div#skills .column ul p {
   margin: 0;
   margin-left: 7.5%;
   font-size: 1.5vw;
   font-style: italic;
 }
 
-/* Projects */
-#projects {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 4%;
-}
-
-#project_menu {
-  width: 19%;
-}
-
-#project_menu a {
-  display: block;
-  padding: 5% 10%;
-  font-size: 1.5vw;
-  background-color: rgb(203, 239, 252);
-  color: #091d3a;
-  border: #091d3a 2px solid;
-  border-top: 0;
-}
-
-#project_menu a:last-of-type {
-  border-bottom: none;
-}
-
-#project_menu a:hover {
-  background-color: rgb(169, 199, 210);
-}
-
-.project_container {
-  width: 75%;
-  padding: 3%;
-  background-color: rgb(203, 239, 252);
-}
-
-.placeholder, .placeholder_video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5%;
-  padding: 20%;
-  text-align: center;
-  font-style: italic;
-  font-size: 2vw;
-  color: rgb(79, 79, 79);
-}
-
-/*
-.video_skills_container {
+@media (min-width: 481px) {
+  #projects {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4%;
+  }
+  #project_menu a {
+    display: block;
+    padding: 5% 10%;
+    font-size: 1.5vw;
+    background-color: rgb(203, 239, 252);
+    color: #091d3a;
+    border: #091d3a 2px solid;
+    border-top: 0;
+  }
+  #project_menu a:last-of-type {
+    border-bottom: none;
+  }
+  #project_menu a:hover {
+    background-color: rgb(169, 199, 210);
+  }
+  .project_container {
+    width: 75%;
+    padding: 3%;
+    background-color: rgb(203, 239, 252);
+  }
+  .placeholder, .placeholder_video {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    width: 90%;
-}
-.video_skills_container .placeholder_video {
-    margin-top: 0;
-    padding: 5%;
-    width: 55%;
+    justify-content: center;
+    margin: 5%;
+    padding: 20%;
+    text-align: center;
+    font-style: italic;
+    font-size: 2vw;
+    color: rgb(79, 79, 79);
+  }
+  h1.project_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding: 3vw;
+  }
+  .project_desc p {
+    padding: 1% 10%;
+    text-align: center;
     font-size: 1.5vw;
+  }
+  .project_divider ~ .project_content > .project_title {
+    padding-top: 3%;
+  }
+  .project_skills {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    padding-top: 5%;
+    align-items: center;
+    list-style-position: outside;
+  }
+  .project_skills #left {
+    float: left;
+    width: 35%;
+  }
+  .project_skills #right {
+    float: right;
+    width: 65%;
+  }
+  .project_skills ul {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project_skills ul li {
+    font-family: "Lucida Console", Courier, monospace;
+    list-style-type: none;
+    font-size: 1.5vw;
+    line-height: 1.2;
+  }
+  .project_skills ul li:before {
+    content: ">";
+  }
+  .what_i_learned {
+    margin: 2% auto;
+    width: 80%;
+  }
+  .what_i_learned h1 {
+    text-align: center;
+    text-decoration: underline rgb(5, 37, 59);
+    font-size: 1.75vw;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-weight: normal;
+  }
+  .what_i_learned p {
+    padding: 0 10% 2% 10%;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    text-align: center;
+    font-style: italic;
+  }
 }
-.video_skills_container .project_skills {
-    padding: 0 5% 5% 0;
-    width: 45%;
-}
-*/
-h1.project_title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.5vw;
-  padding: 3vw;
-}
-
-.project_desc p {
-  padding: 1% 10%;
-  text-align: center;
-  font-size: 1.5vw;
-}
-
-.project_divider ~ .project_content > .project_title {
-  padding-top: 3%;
-}
-
-.project_skills {
-  margin: 0 auto;
-  display: flex;
-  width: 80%;
-  padding-top: 5%;
-  align-items: center;
-  list-style-position: outside;
-}
-
-.project_skills #left {
-  float: left;
-  width: 35%;
-}
-
-.project_skills #right {
-  float: right;
-  width: 65%;
-}
-
-.project_skills ul {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.project_skills ul li {
-  font-family: "Lucida Console", Courier, monospace;
-  list-style-type: none;
-  font-size: 1.5vw;
-  line-height: 1.2;
-}
-
-.project_skills ul li:before {
-  content: ">";
-}
-
-.what_i_learned {
-  margin: 2% auto;
-  width: 80%;
-}
-
-.what_i_learned h1 {
-  text-align: center;
-  text-decoration: underline rgb(5, 37, 59);
-  font-size: 1.75vw;
-  margin-top: 5%;
-  margin-bottom: 3%;
-  font-weight: normal;
-}
-
-.what_i_learned p {
-  padding: 0 10% 2% 10%;
-  font-size: 1.25vw;
-  line-height: 1.25vw;
-  text-align: center;
-  font-style: italic;
-}
-
 .project_divider {
   display: flex;
   justify-content: center;
