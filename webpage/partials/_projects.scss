@@ -1,11 +1,40 @@
 @use "../variables" as v;
 
+//Mobile
+@media (max-width: 480px) {
+    #project_menu button#project_dropdown {
+        display: visible;
+        background-color: v.$light-blue;
+        border: none;
+    }
+
+    #project_menu {
+        background-color: v.$light-blue;
+    }
+
+    #project_menu .project_category {
+        display: none;
+    }
+
+    #project_menu a.visible {
+        display: block;
+    }
+    #project_menu a.invisible {
+        display: none;
+    }
+
+}
+
 //Desktop
 @media (min-width: 481px) {
     #projects {
         display: flex;
         margin: 0 auto;
         margin-top: 4%;
+    }
+
+    #project_menu button#dropdown {
+        display: none;
     }
 
     #project_menu a {
