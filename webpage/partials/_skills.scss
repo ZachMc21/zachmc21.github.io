@@ -1,13 +1,5 @@
 @use "../variables" as v;
 
-//Mobile
-@media (max-width: 480px) {
-    div #skills {
-        display: block;
-        margin: 0 auto;
-    }
-}
-
 //Tablet & Desktop
 @media (min-width: 481px) { 
     #skills {
@@ -47,4 +39,17 @@ div#skills .column ul p {
     margin-left: 7.5%;
     font-size: 1.5rem;
     font-style: italic;
+}
+
+
+//Mobile
+@media (max-width: 480px) {
+    div #skills {
+        display: block;
+        margin: 0 auto;
+    }
+    #skills .column {
+        padding: 5vw;
+        padding-left: 8vw;
+    }
 }

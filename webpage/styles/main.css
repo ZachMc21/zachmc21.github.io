@@ -135,12 +135,6 @@ a:visited {
     margin: 3vw;
   }
 }
-@media (max-width: 480px) {
-  div #skills {
-    display: block;
-    margin: 0 auto;
-  }
-}
 @media (min-width: 481px) {
   #skills {
     margin: 0 auto;
@@ -181,6 +175,16 @@ div#skills .column ul p {
   font-style: italic;
 }
 
+@media (max-width: 480px) {
+  div #skills {
+    display: block;
+    margin: 0 auto;
+  }
+  #skills .column {
+    padding: 5vw;
+    padding-left: 8vw;
+  }
+}
 @media (min-width: 481px) {
   #projects {
     display: flex;
