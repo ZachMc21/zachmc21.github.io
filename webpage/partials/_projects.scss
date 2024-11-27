@@ -20,6 +20,7 @@
         font-size: 1.5rem;
         background-color: v.$light-blue;
         color: v.$navy-blue;
+        box-sizing: border-box;
         border: v.$navy-blue 2px solid;
         border-top: 0;
     }
@@ -31,6 +32,7 @@
     }
 
     .project_container {
+        box-sizing: border-box;
         width: 70%;
         padding: 3%;
         background-color: v.$light-blue;

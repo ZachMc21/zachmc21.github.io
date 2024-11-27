@@ -12,6 +12,16 @@ body {
   width: 80%;
 }
 
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 481px) {
+  html {
+    font-size: 16px;
+  }
+}
 /* HEADER */
 #header {
   position: relative;
@@ -63,7 +73,7 @@ body {
 }
 
 #links .column img {
-  max-width: 0.8em;
+  max-width: 0.8rem;
   height: auto;
 }
 
@@ -99,6 +109,32 @@ a:visited {
   margin-top: 2%;
 }
 
+@media (max-width: 480px) {
+  #title_inner h1 {
+    font-size: 2.5rem;
+  }
+  #title_inner p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  #links {
+    display: block;
+    margin: 0 auto;
+  }
+  #links .column {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  #links .column img {
+    max-width: 1.25rem;
+    height: auto;
+  }
+  #whoami p {
+    font-size: 1.25rem;
+    margin: 3vw;
+  }
+}
 @media (max-width: 480px) {
   div #skills {
     display: block;
@@ -157,6 +193,7 @@ div#skills .column ul p {
     font-size: 1.5rem;
     background-color: rgb(203, 239, 252);
     color: #091d3a;
+    box-sizing: border-box;
     border: #091d3a 2px solid;
     border-top: 0;
   }
@@ -167,6 +204,7 @@ div#skills .column ul p {
     background-color: rgb(169, 199, 210);
   }
   .project_container {
+    box-sizing: border-box;
     width: 70%;
     padding: 3%;
     background-color: rgb(203, 239, 252);

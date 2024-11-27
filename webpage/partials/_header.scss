@@ -45,7 +45,7 @@
     font-size: 1.5rem;
 }
 #links .column img {
-    max-width: 0.8em;
+    max-width: 0.8rem;
     height: auto;
 }
 
@@ -78,4 +78,36 @@ a:visited {
 }
 #whoami p ~ p {
     margin-top: 2%;
+}
+
+//Mobile
+@media (max-width: 480px) {
+    //Adjust font sizes to avoid overflow
+    #title_inner h1 {
+        font-size: 2.5rem;
+    }
+    #title_inner p {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    //Make links stacked, not next to each other
+    #links {
+        display: block;
+        margin: 0 auto;
+    }
+    #links .column {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    #links .column img {
+        max-width: 1.25rem;
+        height: auto;
+    }
+
+    #whoami p {
+        font-size: 1.25rem;
+        margin: 3vw;
+    }
 }
