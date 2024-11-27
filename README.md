@@ -18,5 +18,6 @@ Active backlog:
     - https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
     - https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4
 - Mobile-responsive display
+    - In progress - in mobile view, projects menu does not display
 - Change CSS selector for `<div class="project_divider fade-in" id="end">` to select the last div of that class type
 - When the user scrolls past the bottom of the page, footer background color does not continue

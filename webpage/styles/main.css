@@ -10,6 +10,7 @@ body {
 #main {
   margin: 0 auto;
   width: 80%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 480px) {
@@ -73,7 +74,7 @@ body {
 }
 
 #links .column img {
-  max-width: 0.8rem;
+  max-width: 1.25rem;
   height: auto;
 }
 
@@ -185,11 +186,65 @@ div#skills .column ul p {
     padding-left: 8vw;
   }
 }
+#project_menu {
+  width: 30%;
+}
+
+#project_menu a:hover {
+  background-color: rgb(169, 199, 210);
+}
+
+.project_container {
+  box-sizing: border-box;
+  padding: 3%;
+  background-color: rgb(203, 239, 252);
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  padding: 20%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: rgb(79, 79, 79);
+}
+
+h1.project_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.project_desc p {
+  padding: 1% 10%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.project_divider ~ .project_content > .project_title {
+  padding-top: 3%;
+}
+
+.project_skills {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  padding-top: 5%;
+  align-items: center;
+  list-style-position: outside;
+}
+
 @media (max-width: 480px) {
   #project_menu button#project_dropdown {
     display: visible;
     background-color: rgb(203, 239, 252);
+    margin-top: 1rem;
     border: none;
+    font-size: 1rem;
   }
   #project_menu {
     background-color: rgb(203, 239, 252);
@@ -210,8 +265,8 @@ div#skills .column ul p {
     margin: 0 auto;
     margin-top: 4%;
   }
-  #project_menu button#dropdown {
-    display: none;
+  #project_menu {
+    width: 25%;
   }
   #project_menu a {
     display: block;
@@ -226,47 +281,8 @@ div#skills .column ul p {
   #project_menu a:last-of-type {
     border-bottom: none;
   }
-  #project_menu a:hover {
-    background-color: rgb(169, 199, 210);
-  }
   .project_container {
-    box-sizing: border-box;
-    width: 70%;
-    padding: 3%;
-    background-color: rgb(203, 239, 252);
-  }
-  .placeholder, .placeholder_video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5%;
-    padding: 20%;
-    text-align: center;
-    font-style: italic;
-    font-size: 1.25rem;
-    color: rgb(79, 79, 79);
-  }
-  h1.project_title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.5rem;
-    padding: 1rem;
-  }
-  .project_desc p {
-    padding: 1% 10%;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .project_divider ~ .project_content > .project_title {
-    padding-top: 3%;
-  }
-  .project_skills {
-    margin: 0 auto;
-    display: flex;
-    width: 80%;
-    padding-top: 5%;
-    align-items: center;
-    list-style-position: outside;
+    width: 75%;
   }
   .project_skills #left {
     float: left;

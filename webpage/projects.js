@@ -7,8 +7,9 @@ var projectContentList;
 var numProjectCategories;
 
 var projectMenuDropdown;
-var mql;
 var mobileView;
+
+
 
 window.onload = function() {
     //Initialize global variables
@@ -16,18 +17,20 @@ window.onload = function() {
     projectMenuLinks = document.getElementsByClassName("project_category");
     projectContentList = document.getElementsByClassName("project_container");
     numProjectCategories = projectMenuLinks.length;
+
+    //Watch for window resizing
+    window.addEventListener('resize', checkWindowSize);
     
     projectMenuDropdown = document.getElementById("project_dropdown");
-    mql = window.matchMedia("(max-width: 480px)");
-    mobileView = mql.matches;
-
-    console.log(projectMenuLinks)
     
     resetProjectMenu();
+
     if(mobileView) {
+        projectMenuDropdown.style.display = "block";
+        console.log(projectMenuDropdown.style.display);
+
         //If Projects button is clicked, show list of projects
             //If list of projects is clicked, show that category
-            //Change the Projects button's text to be that category
         projectMenuDropdown.addEventListener("click", function() {
             //If the dropdown is showing, and the button is clicked, hide the dropdown menu
             if(projectMenuLinks[0].classList.contains("visible")) {
@@ -50,6 +53,7 @@ window.onload = function() {
         });
     }
     else {
+        projectMenuDropdown.style.display = "none";
         //Add an event listener to each item in projectMenuLinks
         for (let i=0; i<numProjectCategories; i++) {
             projectMenuLinks[i].addEventListener("click", function() {
@@ -62,6 +66,10 @@ window.onload = function() {
     }
 }
 
+function checkWindowSize() {
+    var mql = window.matchMedia("(max-width: 480px)");
+    mobileView = mql.matches;
+}
 
 function showDropdownList() {
     for (let i=0; i<numProjectCategories; i++) {
@@ -80,6 +88,7 @@ function hideDropdownList() {
     }
 }
 
+//Change the Projects button's text to be that category
 function setActiveDropdown(menuItem) {
     var text = menuItem.text;
     projectMenuDropdown.setActiveContent = "&or; " + text;

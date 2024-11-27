@@ -1,11 +1,61 @@
 @use "../variables" as v;
 
+//General
+#project_menu {
+    width: 30%;
+}
+#project_menu a:hover {
+    background-color: v.$gray-blue;
+}
+.project_container {
+    box-sizing: border-box;
+    padding: 3%;
+    background-color: v.$light-blue;
+}
+
+.placeholder {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 5%;
+    padding: 20%;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: v.$dark-gray;
+}
+h1.project_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.project_desc p {
+    padding: 1% 10%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.project_divider ~ .project_content > .project_title {
+    padding-top: 3%;
+}
+
+.project_skills {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    padding-top: 5%;
+    align-items: center;
+    list-style-position: outside;
+}
+
 //Mobile
 @media (max-width: 480px) {
     #project_menu button#project_dropdown {
         display: visible;
         background-color: v.$light-blue;
+        margin-top: 1rem;
         border: none;
+        font-size: 1rem;
     }
 
     #project_menu {
@@ -33,10 +83,9 @@
         margin-top: 4%;
     }
 
-    #project_menu button#dropdown {
-        display: none;
+    #project_menu {
+        width: 25%;
     }
-
     #project_menu a {
         display: block;
         padding: 5% 5%;
@@ -50,50 +99,11 @@
     #project_menu a:last-of-type {
         border-bottom: none;
     }
-    #project_menu a:hover {
-        background-color: v.$gray-blue;
-    }
 
     .project_container {
-        box-sizing: border-box;
-        width: 70%;
-        padding: 3%;
-        background-color: v.$light-blue;
-    }
-    .placeholder, .placeholder_video {
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        margin: 5%;
-        padding: 20%;
-        text-align: center;
-        font-style: italic;
-        font-size: 1.25rem;
-        color: v.$dark-gray;
-    }
-    h1.project_title {
-        text-align: center;
-        font-weight: bold;
-        font-size: 2.5rem;
-        padding: 1rem;
-    }
-    .project_desc p {
-        padding: 1% 10%;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    .project_divider ~ .project_content > .project_title {
-        padding-top: 3%;
+        width: 75%;
     }
 
-    .project_skills {
-        margin: 0 auto;
-        display: flex;
-        width: 80%;
-        padding-top: 5%;
-        align-items: center;
-        list-style-position: outside;
-    }
     .project_skills #left {
         float: left;
         width: 35%;
