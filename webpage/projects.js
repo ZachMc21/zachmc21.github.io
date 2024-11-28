@@ -9,7 +9,10 @@ var numProjectCategories;
 var projectMenuDropdown;
 var mobileView;
 
+var mobileMax = 480;
 
+//Watch for window resizing
+window.addEventListener("resize", checkWindowSize);
 
 window.onload = function() {
     //Initialize global variables
@@ -17,58 +20,66 @@ window.onload = function() {
     projectMenuLinks = document.getElementsByClassName("project_category");
     projectContentList = document.getElementsByClassName("project_container");
     numProjectCategories = projectMenuLinks.length;
-
-    //Watch for window resizing
-    window.addEventListener('resize', checkWindowSize);
     
     projectMenuDropdown = document.getElementById("project_dropdown");
     
     resetProjectMenu();
-
-    if(mobileView) {
-        projectMenuDropdown.style.display = "block";
-        console.log(projectMenuDropdown.style.display);
-
-        //If Projects button is clicked, show list of projects
-            //If list of projects is clicked, show that category
-        projectMenuDropdown.addEventListener("click", function() {
-            //If the dropdown is showing, and the button is clicked, hide the dropdown menu
-            if(projectMenuLinks[0].classList.contains("visible")) {
-                hideDropdownList();
-                resetProjectContent();
-            }
-            else {
-                showDropdownList();
-
-                //Listen for a click on one of the menu items
-                for (let i=0; i<numProjectCategories; i++) {
-                    projectMenuLinks[i].addEventListener("click", function() {
-                        hideDropdownList();
-                        resetProjectContent();
-                        setActiveDropdown(projectMenuLinks[i]);
-                        setActiveContent(projectContentList[i]);
-                    });
-                }
-            }
-        });
-    }
-    else {
-        projectMenuDropdown.style.display = "none";
-        //Add an event listener to each item in projectMenuLinks
-        for (let i=0; i<numProjectCategories; i++) {
-            projectMenuLinks[i].addEventListener("click", function() {
-                resetProjectMenu();
-                resetProjectContent();
-                setActiveMenu(projectMenuLinks[i]);
-                setActiveContent(projectContentList[i]);
-            });
-        }
-    }
+    checkWindowSize();
 }
 
 function checkWindowSize() {
-    var mql = window.matchMedia("(max-width: 480px)");
-    mobileView = mql.matches;
+    //console.log("Window size checked");
+    var currentSize = document.getElementsByTagName('body')[0].clientWidth;
+    //console.log(currentSize);
+    if(currentSize <= mobileMax) {
+        loadMobile();
+    }
+    else {
+        loadDesktop();
+    }
+}
+
+function loadDesktop() {
+    projectMenuDropdown.style.display = "none";
+    //Add an event listener to each item in projectMenuLinks
+    for (let i=0; i<numProjectCategories; i++) {
+        projectMenuLinks[i].addEventListener("click", function() {
+            resetProjectMenu();
+            resetProjectContent();
+            setActiveMenu(projectMenuLinks[i]);
+            setActiveContent(projectContentList[i]);
+        });
+    }
+    console.log("desktop JS loaded");
+}
+
+function loadMobile() {
+    projectMenuDropdown.style.display = "block";
+    //console.log(projectMenuDropdown.style.display);
+
+    //If Projects button is clicked, show list of projects
+        //If list of projects is clicked, show that category
+    projectMenuDropdown.addEventListener("click", function() {
+        //If the dropdown is showing, and the button is clicked, hide the dropdown menu
+        if(projectMenuLinks[0].classList.contains("visible")) {
+            hideDropdownList();
+            resetProjectContent();
+        }
+        else {
+            showDropdownList();
+
+            //Listen for a click on one of the menu items
+            for (let i=0; i<numProjectCategories; i++) {
+                projectMenuLinks[i].addEventListener("click", function() {
+                    hideDropdownList();
+                    resetProjectContent();
+                    setActiveDropdown(projectMenuLinks[i]);
+                    setActiveContent(projectContentList[i]);
+                });
+            }
+        }
+    });
+    console.log("mobile JS loaded");
 }
 
 function showDropdownList() {
@@ -78,6 +89,7 @@ function showDropdownList() {
             projectMenuLinks[i].classList.add("visible");
         }
     }
+    console.log("Dropdown list shown");
 }
 function hideDropdownList() {
     for (let i=0; i<numProjectCategories; i++) {
@@ -86,6 +98,7 @@ function hideDropdownList() {
             projectMenuLinks[i].classList.add("invisible");
         }
     }
+    console.log("Dropdown list hidden");
 }
 
 //Change the Projects button's text to be that category
