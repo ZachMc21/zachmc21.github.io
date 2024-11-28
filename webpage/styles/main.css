@@ -53,10 +53,10 @@ body {
   font-size: 4rem;
 }
 
-#title_inner p {
-  margin-top: 0;
-  margin-bottom: 1vw;
+#title_inner a#email {
+  margin: 1rem auto;
   font-size: 1.5rem;
+  color: black;
 }
 
 /* LINKS SECTION */
@@ -114,9 +114,8 @@ a:visited {
   #title_inner h1 {
     font-size: 2.5rem;
   }
-  #title_inner p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
+  #title_inner a#email {
+    font-size: 1.25rem;
   }
   #links {
     display: block;
@@ -186,10 +185,6 @@ div#skills .column ul p {
     padding-left: 8vw;
   }
 }
-#project_menu {
-  width: 30%;
-}
-
 #project_menu a:hover {
   background-color: rgb(169, 199, 210);
 }
@@ -238,19 +233,44 @@ h1.project_title {
   list-style-position: outside;
 }
 
-@media (max-width: 480px) {
-  #project_menu button#project_dropdown {
-    display: visible;
-    background-color: rgb(203, 239, 252);
-    margin-top: 1rem;
-    border: none;
-    font-size: 1rem;
-  }
+.project_skills ul {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.takeaways h1 {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.takeaways p {
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
   #project_menu {
     background-color: rgb(203, 239, 252);
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-bottom: 0.5rem solid #091d3a;
+  }
+  #project_menu button#project_dropdown {
+    display: block;
+    border: none;
+    background-color: rgb(203, 239, 252);
+    font-size: 2rem;
+    margin: 0 auto;
   }
   #project_menu .project_category {
     display: none;
+  }
+  #project_menu a#email {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
   }
   #project_menu a.visible {
     display: block;
@@ -258,15 +278,23 @@ h1.project_title {
   #project_menu a.invisible {
     display: none;
   }
+  .project_skills {
+    font-size: 1.25rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .project_skills #left, .project_skills #right {
+    width: 50%;
+  }
 }
-@media (min-width: 481px) {
+@media (min-width: 769px) {
   #projects {
     display: flex;
     margin: 0 auto;
     margin-top: 4%;
   }
   #project_menu {
-    width: 25%;
+    width: 30%;
   }
   #project_menu a {
     display: block;
@@ -292,10 +320,6 @@ h1.project_title {
     float: right;
     width: 65%;
   }
-  .project_skills ul {
-    padding-left: 0;
-    padding-right: 0;
-  }
   .project_skills ul li {
     font-family: "Lucida Console", Courier, monospace;
     list-style-type: none;
@@ -307,23 +331,14 @@ h1.project_title {
   }
   .takeaways {
     border: 2% solid #091d3a;
-    margin: 2% auto;
     width: 90%;
   }
   .takeaways h1 {
-    text-align: center;
     text-decoration: underline #091d3a;
     font-size: 1.5rem;
     margin-top: 5%;
     margin-bottom: 3%;
     font-weight: normal;
-  }
-  .takeaways p {
-    padding-bottom: 0.75rem;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    text-align: center;
-    font-style: italic;
   }
 }
 .project_divider {

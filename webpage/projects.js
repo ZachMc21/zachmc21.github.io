@@ -9,7 +9,7 @@ var numProjectCategories;
 var projectMenuDropdown;
 var mobileView;
 
-var mobileMax = 480;
+var mobileMax = 768;
 
 //Watch for window resizing
 window.addEventListener("resize", checkWindowSize);
@@ -85,10 +85,10 @@ function setActiveMenu(menuItem) {
 //---MOBILE FUNCTIONS
 function loadMobile() {
     projectMenuDropdown.style.display = "block";
+    resetProjectMenu();
     //console.log(projectMenuDropdown.style.display);
 
     //If Projects button is clicked, show list of projects
-        //If list of projects is clicked, show that category
     projectMenuDropdown.addEventListener("click", function() {
         //If the dropdown is showing, and the button is clicked, hide the dropdown menu
         if(projectMenuLinks[0].classList.contains("visible")) {

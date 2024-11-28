@@ -26,10 +26,10 @@
     margin-bottom: 1vw;
     font-size: 4rem;
 }
-#title_inner p {
-    margin-top: 0;
-    margin-bottom: 1vw;
+#title_inner a#email {
+    margin: 1rem auto;
     font-size: 1.5rem;
+    color: black;
 }
 
 /* LINKS SECTION */
@@ -86,9 +86,8 @@ a:visited {
     #title_inner h1 {
         font-size: 2.5rem;
     }
-    #title_inner p {
-        font-size: 1.2rem;
-        margin: 1rem 0;
+    #title_inner a#email {
+        font-size: 1.25rem;
     }
 
     //Make links stacked, not next to each other
