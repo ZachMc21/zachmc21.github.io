@@ -1,6 +1,6 @@
 let activeContent = "";
 
-//Declare global variablaes
+//Global variablaes
 var projectMenu;
 var projectMenuLinks;
 var projectContentList;
@@ -14,6 +14,7 @@ var mobileMax = 480;
 //Watch for window resizing
 window.addEventListener("resize", checkWindowSize);
 
+//On window load
 window.onload = function() {
     //Initialize global variables
     projectMenu = document.getElementById("project_menu");
@@ -39,6 +40,29 @@ function checkWindowSize() {
     }
 }
 
+//BEGIN HELPER FUNCTIONS
+
+//---UNIVERSAL FUNCTIONS
+function resetProjectMenu() {
+    for (let i=0; i<numProjectCategories; i++) {
+        if (projectMenuLinks[i].classList.contains("active")) {
+            projectMenuLinks[i].classList.remove("active");
+        }
+    }
+}
+
+function resetProjectContent() {
+    for (let i=0; i<numProjectCategories; i++) {
+        projectContentList[i].style.display="none";
+    }
+}
+
+function setActiveContent(contentItem) {
+    contentItem.style.display = 'block';
+}
+
+
+//---DESKTOP FUNCTIONS
 function loadDesktop() {
     projectMenuDropdown.style.display = "none";
     //Add an event listener to each item in projectMenuLinks
@@ -50,9 +74,15 @@ function loadDesktop() {
             setActiveContent(projectContentList[i]);
         });
     }
-    console.log("desktop JS loaded");
+    //console.log("desktop JS loaded");
 }
 
+function setActiveMenu(menuItem) {
+    menuItem.classList.add("active");
+}
+
+
+//---MOBILE FUNCTIONS
 function loadMobile() {
     projectMenuDropdown.style.display = "block";
     //console.log(projectMenuDropdown.style.display);
@@ -79,7 +109,7 @@ function loadMobile() {
             }
         }
     });
-    console.log("mobile JS loaded");
+    //console.log("mobile JS loaded");
 }
 
 function showDropdownList() {
@@ -89,7 +119,7 @@ function showDropdownList() {
             projectMenuLinks[i].classList.add("visible");
         }
     }
-    console.log("Dropdown list shown");
+    //console.log("Dropdown list shown");
 }
 function hideDropdownList() {
     for (let i=0; i<numProjectCategories; i++) {
@@ -98,33 +128,12 @@ function hideDropdownList() {
             projectMenuLinks[i].classList.add("invisible");
         }
     }
-    console.log("Dropdown list hidden");
+    //console.log("Dropdown list hidden");
 }
 
 //Change the Projects button's text to be that category
+//TODO not working
 function setActiveDropdown(menuItem) {
     var text = menuItem.text;
     projectMenuDropdown.setActiveContent = "&or; " + text;
-}
-
-function resetProjectMenu() {
-    for (let i=0; i<numProjectCategories; i++) {
-        if (projectMenuLinks[i].classList.contains("active")) {
-            projectMenuLinks[i].classList.remove("active");
-        }
-    }
-}
-
-function resetProjectContent() {
-    for (let i=0; i<numProjectCategories; i++) {
-        projectContentList[i].style.display="none";
-    }
-}
-
-function setActiveMenu(menuItem) {
-    menuItem.classList.add("active");
-}
-
-function setActiveContent(contentItem) {
-    contentItem.style.display = 'block';
 }
