@@ -54,3 +54,10 @@ div#skills .column ul p {
         padding-left: 8vw;
     }
 }
+
+@media (min-width: 481px) {
+    #skills .column#web_skills {
+        border-left: 1vw solid v.$navy-blue;
+        border-right: 1vw solid v.$navy-blue;
+    }
+}

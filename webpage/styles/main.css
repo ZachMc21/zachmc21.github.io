@@ -185,6 +185,12 @@ div#skills .column ul p {
     padding-left: 8vw;
   }
 }
+@media (min-width: 481px) {
+  #skills .column#web_skills {
+    border-left: 1vw solid #091d3a;
+    border-right: 1vw solid #091d3a;
+  }
+}
 #project_menu a:hover {
   background-color: rgb(169, 199, 210);
 }
@@ -306,11 +312,11 @@ h1.project_title {
     margin-top: 4%;
   }
   #project_menu {
-    width: 30%;
+    width: 25%;
   }
   #project_menu a {
     display: block;
-    padding: 5% 5%;
+    padding: 5%;
     font-size: 1.5rem;
     background-color: rgb(203, 239, 252);
     color: #091d3a;
