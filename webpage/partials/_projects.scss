@@ -38,18 +38,23 @@ h1.project_title {
 
 .project_skills {
     margin: 0 auto;
-    display: flex;
-    width: 80%;
     padding-top: 5%;
-    align-items: center;
-    list-style-position: outside;
 }
 
-.project_skills ul {
-    padding-left: 0;
-    padding-right: 0;
+.project_skills ul li {
+    font-family: "Lucida Console", Courier, monospace;
+    list-style-type: none;
+}
+.project_skills ul li:before {
+    content: ">";
 }
 
+
+.takeaways {
+    width: 90%;
+    margin: 0 auto;
+    border: 2% solid v.$navy-blue;
+}
 .takeaways h1 {
     margin: 1rem auto;
     text-align: center;
@@ -67,8 +72,6 @@ h1.project_title {
         background-color: v.$light-blue;
         width: 100%;
         margin-top: 2rem;
-        padding: 1rem 0;
-        border-bottom: 0.5rem solid v.$navy-blue;
     }
 
     #project_menu button#project_dropdown {
@@ -77,14 +80,19 @@ h1.project_title {
         background-color: v.$light-blue;
         font-size: 2rem;
         margin: 0 auto;
+        border-bottom: 0.25rem solid v.$navy-blue;
+        padding: 1rem;
+        width: 100%;
     }
 
-    #project_menu .project_category {
-        display: none;
-    }
-    #project_menu a#email {
-        padding: 0.5rem 1rem;
+    #project_menu a {
+        padding: 0.5rem;
         font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #project_menu a.project_category {
+        display: none;
     }
     #project_menu a.visible {
         display: block;
@@ -93,15 +101,19 @@ h1.project_title {
         display: none;
     }
 
-    .project_skills {
-        font-size: 1.25rem;
-        width: 80%;
-        margin: 0 auto;
+    a.project_category:first-of-type {
+        margin-top: 0.75rem;
     }
-    .project_skills #left, .project_skills #right {
-        width: 50%;
+    a.project_category:first-of-type {
+        padding-bottom: 0.75rem;
     }
 
+    .project_skills {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 //Desktop
@@ -132,30 +144,32 @@ h1.project_title {
     .project_container {
         width: 75%;
     }
-
-    .project_skills #left {
+    
+    .project_skills {
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+    .project_skills ul#left {
         float: left;
         width: 35%;
     }
-    .project_skills #right {
+    .project_skills ul#right {
         float: right;
         width: 65%;
+        margin-left: 1rem;
     }
-
+    .project_skills ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .project_skills ul li {
         font-family: "Lucida Console", Courier, monospace;
         list-style-type: none;
         font-size: 1.25rem;
         line-height: 1.2;
     }
-    .project_skills ul li:before {
-        content: ">";
-    }
 
-    .takeaways {
-        border: 2% solid v.$navy-blue;
-        width: 90%;
-    }
     .takeaways h1 {
         text-decoration: underline v.$navy-blue;    //Why isn't this border working?
         font-size: 1.5rem;
@@ -172,7 +186,7 @@ h1.project_title {
     padding: 2%;
     background-color: v.$gray-blue;
 }
-.project_divider#end {
+.project_divider:last-of-type {
     margin-bottom: 0;
 }
 .project_divider img {
