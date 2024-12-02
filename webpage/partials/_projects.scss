@@ -4,6 +4,9 @@
 #project_menu a:hover {
     background-color: v.$gray-blue;
 }
+#project_menu .active {
+    background-color: v.$gray-blue;
+}
 .project_container {
     box-sizing: border-box;
     padding: 3%;
