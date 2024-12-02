@@ -132,8 +132,10 @@ function hideDropdownList() {
 }
 
 //Change the Projects button's text to be that category
-//TODO not working
 function setActiveDropdown(menuItem) {
     var text = menuItem.text;
-    projectMenuDropdown.setActiveContent = "&or; " + text;
+    if(text==="Data Analysis & Visualization") {
+        projectMenuDropdown.style = "font-size: 1.85rem;";
+    }
+    projectMenuDropdown.innerHTML = "&or; " + text;
 }

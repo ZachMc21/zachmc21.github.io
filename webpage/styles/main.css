@@ -175,10 +175,6 @@ div#skills .column ul p {
     border-right: 1vw solid #091d3a;
   }
 }
-#project_menu a:hover {
-  background-color: rgb(169, 199, 210);
-}
-
 #project_menu .active {
   background-color: rgb(169, 199, 210);
 }
@@ -312,6 +308,9 @@ h1.project_title {
     border: #091d3a 2px solid;
     border-top: 0;
   }
+  #project_menu a:hover {
+    background-color: rgb(169, 199, 210);
+  }
   #project_menu a:last-of-type {
     border-bottom: none;
   }
@@ -399,6 +398,7 @@ h1.project_title {
 }
 
 #personal_life p {
+  margin: 0 auto;
   font-size: 1.25rem;
   text-align: center;
   line-height: 1.5rem;
