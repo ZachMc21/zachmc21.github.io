@@ -135,14 +135,18 @@ a:visited {
     margin: 3vw;
   }
 }
-@media (min-width: 481px) {
+#skills {
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
   #skills {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
   #skills div {
-    width: 33.33%;
+    width: 32%;
   }
 }
 #skills .column {
@@ -153,26 +157,19 @@ a:visited {
   background-color: rgb(203, 239, 252);
 }
 
-div#skills .column ul p {
+ul.nested-1 {
   margin: 0;
-  margin-left: 10%;
   font-size: 1.5rem;
   font-style: italic;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   div #skills {
     display: block;
     margin: 0 auto;
   }
   #skills .column {
     padding: 5vw 2vw;
-  }
-}
-@media (min-width: 481px) {
-  #skills .column#web_skills {
-    border-left: 1vw solid #091d3a;
-    border-right: 1vw solid #091d3a;
   }
 }
 #project_menu .active {
@@ -279,7 +276,7 @@ h1.project_title {
   a.project_category:first-of-type {
     margin-top: 0.75rem;
   }
-  a.project_category:first-of-type {
+  a.project_category:last-of-type {
     padding-bottom: 0.75rem;
   }
   .project_skills {

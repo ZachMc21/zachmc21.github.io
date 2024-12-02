@@ -1,14 +1,18 @@
 @use "../variables" as v;
 
-//Tablet & Desktop
-@media (min-width: 481px) { 
+#skills {
+    overflow: hidden;
+}
+
+//Desktop
+@media (min-width: 769px) { 
     #skills {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
     #skills div {
-        width: 33.33%;
+        width: 32%;
     }
 }
 
@@ -19,28 +23,20 @@
     padding: 3% 0;
     background-color: v.$light-blue;
 }
-div#skills .column ul p {
+ul.nested-1 {
     margin: 0;
-    margin-left: 10%;
     font-size: 1.5rem;
     font-style: italic;
 }
 
 
-//Mobile
-@media (max-width: 480px) {
+//Mobile & Tablet
+@media (max-width: 768px) {
     div #skills {
         display: block;
         margin: 0 auto;
     }
     #skills .column {
         padding: 5vw 2vw;
-    }
-}
-
-@media (min-width: 481px) {
-    #skills .column#web_skills {
-        border-left: 1vw solid v.$navy-blue;
-        border-right: 1vw solid v.$navy-blue;
     }
 }
