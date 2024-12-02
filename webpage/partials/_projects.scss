@@ -1,9 +1,6 @@
 @use "../variables" as v;
 
 //General
-#project_menu a:hover {
-    background-color: v.$gray-blue;
-}
 #project_menu .active {
     background-color: v.$gray-blue;
 }
@@ -139,6 +136,9 @@ h1.project_title {
         box-sizing: border-box;
         border: v.$navy-blue 2px solid;
         border-top: 0;
+    }
+    #project_menu a:hover {
+        background-color: v.$gray-blue;
     }
     #project_menu a:last-of-type {
         border-bottom: none;
