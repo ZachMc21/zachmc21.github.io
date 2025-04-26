@@ -1,0 +1,12 @@
+@use "../variables" as v;
+
+div#disclaimer h1 {
+    margin: 1rem auto;
+    width: 80%;
+    background-color: v.$light-blue;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    text-emphasis: none;
+    font-style: italic;
+}
