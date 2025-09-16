@@ -41,10 +41,15 @@ h1.project_title {
     padding-top: 5%;
 }
 
-
+.project_skills ul {
+    list-style: none;
+    padding: 0;
+}
 .project_skills ul li {
     font-family: "Lucida Console", Courier, monospace;
-    list-style-type: none;
+    position: relative;
+    padding-left: 2em;
+    text-indent: -5em;
 }
 .project_skills ul li:before {
     content: ">";

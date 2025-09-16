@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
     <link rel="stylesheet" href="./styles/main.css"/>
 
     <title>Zach Magloughlin</title>
@@ -46,7 +45,7 @@
     </div> <!-- End header/title -->
 
     <div id="disclaimer">
-        <h1 class="disclaimer"> Disclaimer: This page is currently being rebuilt using React & Bootstrap. </h1>
+        <h1 class="disclaimer"> Disclaimer: This page is currently being rebuilt in a new repository. </h1>
     </div>
 
     <div id="main">
@@ -64,18 +63,19 @@
                             <li> Jupyter notebooks </li>
                             <li> Matplotlib </li>
                             <li> Pandas </li>
+                            <li> Scikit-learn </li>
                         </ul>
                 </ul>
             </div>
 
             <div class="column" id="web_skills">
                 <ul class="nested-0">
-                    <li> HTML5 </li>
-                    <li> CSS3 </li>
-                    <li> JavaScript, TypeScript </li>
-                    <li> Relational databases </li>       
+                    <li> HTML5, CSS3 </li>
+                    <li> JavaScript, TypeScript, React </li>
+                    <li> PHP </li>
+                    <li> Relational databases & SQL </li>       
                         <ul class="nested-1">
-                            <li> SQL </li>
+                            <li> MySQL </li>
                             <li> PostgreSQL </li>
                             <li> SQLite </li>
                         </ul>
@@ -87,8 +87,10 @@
                     <li> Git and GitHub </li>
                     <li> Scrum software </li>
                         <ul class="nested-1">
+                            <li> Azure DevOps </li>
                             <li> Jira </li>
                             <li> Notion </li>
+                            <li> Trello </li>
                         </ul>
                     <li> IDEs </li>
                         <ul class="nested-1">
@@ -104,82 +106,13 @@
         <div id="projects">
             <div id="project_menu">
                 <button id="project_dropdown" type="button" style="display:none">&or; Projects</button>
-                <a class="project_category" id="swe">Software Engineering</a>
                 <a class="project_category" id="webdev">Web Development</a>
+                <a class="project_category" id="swe">Software Engineering</a>
                 <a class="project_category" id="ui-ux">UI & UX</a>
                 <a class="project_category" id="data">Data Analysis & Visualization</a>
                 <a class="project_category" id="database">Databases</a>
                 <a class="project_category" id="gamedev">Game Development</a>
             </div>
-
-            <div class="project_container" id="swe_content" style="display:none">
-                <div class="project_content fade-in" id="smart_barbell">
-                    <h1 class="project_title"> Smart Barbell </h1>
-
-                    <div class="project_desc">
-                        <p> An Android mobile application that integrates with motion-tracking hardware attached to each end of a barbell. </p>
-                        <p> Alerts the user in real-time when their exercise motion is off-balance. </p>
-                        <p> Stores exercise history for later analysis. </p>
-                    </div>
-
-                    <div class="project_skills">
-                        <ul class="column" id="left">
-                            <li> Kotlin </li>
-                            <li> Android Studio </li>
-                            <li> Git & GitHub </li>
-                            <li> Figma </li>
-                        </ul>
-                        <ul class="column" id="right">
-                            <li> UI/UX </li>
-                            <li> Database design </li>
-                            <li> Agile sprints </li>
-                            <li> Teamwork </li>
-                            <li> Technical presentations </li>
-                        </ul>
-                    </div>
-
-                    <div class="takeaways">
-                        <h1> Takeaways </h1>
-                        <p> Communicate with the scrum master! Not just updates and questions, but also clarifications and preferences about subtasks, work styles, etc. </p>
-                        <p> Some projects have major pivots and changes even after a lot of work - that's just the way it is sometimes. </p>
-                    </div>
-                </div> <!-- End Smart Barbell -->
-                
-                <div class="project_divider fade-in" id="middle">
-                    <img src="./images/dividers/art_deco.png" />
-                </div>
-
-                <div class="project_content fade-in" id="clue">
-                    <h1 class="project_title"> Clue Game </h1>
-
-                    <div class="project_desc">
-                        <p> A digital version of the board game Clue, built from scratch, with a robust test suite. </p>
-                    </div>
-
-                    <div class="project_skills">
-                        <ul class="column" id="left">
-                            <li> Java </li>
-                            <li> JUnit </li>
-                            <li> Git & GitHub </li>
-                        </ul>
-                        <ul class="column" id="right">
-                            <li> Test-driven development </li>
-                            <li> Object-oriented programming </li>
-                            <li> Teamwork </li>
-                        </ul>
-                    </div>
-
-                    <div class="takeaways">
-                        <h1> Takeaways </h1>
-                        <p> Document your classes and methods. </p>
-                        <p> Have some kind of template or guidelines for how classes and methods will be organized. </p>
-                    </div>
-                </div> <!-- End Clue Game -->
-                
-                <div class="project_divider fade-in" id="middle">
-                    <img src="./images/dividers/art_deco.png" />
-                </div>
-            </div> <!-- End SWE project content -->
 
             <div class="project_container" id="webdev_content" style="display:none">
                 <div class="project_content fade-in" id="personal_portfolio">
@@ -193,7 +126,7 @@
                     <div class="project_skills">
                         <ul class="column" id="left">
                             <li> HTML5 </li>
-                            <li> CSS3 </li>
+                            <li> CSS3, SCSS </li>
                             <li> JavaScript </li>
                             <li> Git & GitHub </li>
                         </ul>
@@ -223,13 +156,12 @@
                     <h1 class="project_title"> High Grade 2025 </h1>
                     
                     <div class="project_desc">
-                        <p> Updating the <a href="https://highgrade.mines.edu/">High Grade website</a> for the 2025 release of the journal. </p>
+                        <p> Updating the <a href="https://highgrade.mines.edu/">High Grade website</a> for the 2025 and 2026 releases of the journal. </p>
                     </div>
 
                     <div class="project_skills">
                         <ul class="column" id="left">
-                            <li> HTML5 </li>
-                            <li> CSS3 </li>
+                            <li> HTML5 & CSS3 </li>
                             <li> Ruby </li>
                             <li> Jekyll </li>
                             <li> Git & GitHub </li>
@@ -322,6 +254,77 @@
             </div> <!-- End webdev projects -->
 
             
+
+            <div class="project_container" id="swe_content" style="display:none">
+                <div class="project_content fade-in" id="smart_barbell">
+                    <h1 class="project_title"> Smart Barbell </h1>
+
+                    <div class="project_desc">
+                        <p> An Android mobile application that integrates with motion-tracking hardware attached to each end of a barbell. </p>
+                        <p> Alerts the user in real-time when their exercise motion is off-balance. </p>
+                        <p> Stores exercise history for later analysis. </p>
+                    </div>
+
+                    <div class="project_skills">
+                        <ul class="column" id="left">
+                            <li> Kotlin </li>
+                            <li> Android Studio </li>
+                            <li> Git & GitHub </li>
+                            <li> Figma </li>
+                        </ul>
+                        <ul class="column" id="right">
+                            <li> UI/UX </li>
+                            <li> Database design </li>
+                            <li> Agile sprints </li>
+                            <li> Teamwork </li>
+                            <li> Technical presentations </li>
+                        </ul>
+                    </div>
+
+                    <div class="takeaways">
+                        <h1> Takeaways </h1>
+                        <p> Communicate with the scrum master! Not just updates and questions, but also clarifications and preferences about subtasks, work styles, etc. </p>
+                        <p> Some projects have major pivots and changes even after a lot of work - that's just the way it is sometimes. </p>
+                    </div>
+                </div> <!-- End Smart Barbell -->
+                
+                <div class="project_divider fade-in" id="middle">
+                    <img src="./images/dividers/art_deco.png" />
+                </div>
+
+                <div class="project_content fade-in" id="clue">
+                    <h1 class="project_title"> Clue Game </h1>
+
+                    <div class="project_desc">
+                        <p> A digital version of the board game Clue, built from scratch, with a robust test suite. </p>
+                    </div>
+
+                    <div class="project_skills">
+                        <ul class="column" id="left">
+                            <li> Java </li>
+                            <li> JUnit </li>
+                            <li> Git & GitHub </li>
+                        </ul>
+                        <ul class="column" id="right">
+                            <li> Test-driven development </li>
+                            <li> Object-oriented programming </li>
+                            <li> Teamwork </li>
+                        </ul>
+                    </div>
+
+                    <div class="takeaways">
+                        <h1> Takeaways </h1>
+                        <p> Document your classes and methods. </p>
+                        <p> Have some kind of template or guidelines for how classes and methods will be organized. </p>
+                    </div>
+                </div> <!-- End Clue Game -->
+                
+                <div class="project_divider fade-in" id="middle">
+                    <img src="./images/dividers/art_deco.png" />
+                </div>
+            </div> <!-- End SWE project content -->
+
+            
             <div class="project_container" id="ui-ux_content" style="display:none">
                 <div class="placeholder fade-in">
                     <p> UI/UX examples coming soon! </p>
@@ -349,7 +352,7 @@
     
         <div id="personal_life">
             <h1> Clubs & Extracurriculars! </h1>
-            <p> High Grade Journal of the Arts - jury member, contributor </p>
+            <p> High Grade Journal of the Arts - jury member, contributor, webmaster </p>
             <p> Pyrotechnics club - member </p>
             <p> Concert band - flute </p>
 
