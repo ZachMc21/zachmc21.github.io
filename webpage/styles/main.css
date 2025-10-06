@@ -135,7 +135,7 @@ a:visited {
 }
 div#disclaimer h1 {
   margin: 1rem auto;
-  width: 80%;
+  max-width: 80%;
   background-color: rgb(203, 239, 252);
   font-size: 2rem;
   padding: 2rem;
