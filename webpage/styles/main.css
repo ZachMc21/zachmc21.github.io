@@ -15,7 +15,7 @@ body {
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (min-width: 481px) {
@@ -40,7 +40,7 @@ body {
 
 #title_inner {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   padding: 5%;
   padding-bottom: 3%;
   text-align: center;
@@ -50,27 +50,30 @@ body {
 
 #title_inner h1 {
   margin-bottom: 1vw;
-  font-size: 4rem;
+  font-size: 3em;
 }
 
 #title_inner a#email {
   margin: 1rem auto;
   font-size: 1.5rem;
   color: black;
+  max-width: 80vw;
 }
 
 /* LINKS SECTION */
 #links {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin: 1.25rem auto;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  gap: 0.5rem;
 }
 
 #links .column {
-  width: 30%;
-  text-align: center;
-  margin: auto;
-  padding: 2.5% 0;
-  font-size: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.25rem;
 }
 
 #links .column img {
@@ -99,7 +102,7 @@ a:visited {
   width: 80%;
   height: 40%;
   padding: 4%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
   background-color: rgb(203, 239, 252);
   color: #091d3a;
@@ -110,27 +113,28 @@ a:visited {
   margin-top: 2%;
 }
 
-@media (max-width: 480px) {
+/* Tablets and desktop */
+@media (min-width: 640px) {
   #title_inner h1 {
-    font-size: 2.5rem;
+    margin-bottom: 1vw;
+    font-size: 4rem;
   }
   #links {
-    display: block;
-    margin: 0 auto;
-    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1rem;
   }
   #links .column {
-    margin: 0 auto;
-    width: 100%;
-    font-size: 1.25rem;
+    text-align: center;
+    margin: auto;
+    padding: 2.5% 0;
+    font-size: 2rem;
   }
   #links .column img {
-    max-width: 1.25rem;
+    width: 4rem;
     height: auto;
-  }
-  #whoami p {
-    font-size: 1.25rem;
-    margin: 3vw;
   }
 }
 div#disclaimer h1 {
@@ -221,8 +225,9 @@ h1.project_title {
 }
 
 .project_skills {
-  margin: 0 auto;
-  padding-top: 5%;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 1rem 2rem;
 }
 
 .project_skills ul {
@@ -232,9 +237,6 @@ h1.project_title {
 
 .project_skills ul li {
   font-family: "Lucida Console", Courier, monospace;
-  position: relative;
-  padding-left: 2em;
-  text-indent: -5em;
 }
 
 .project_skills ul li:before {
@@ -295,12 +297,6 @@ h1.project_title {
   a.project_category:last-of-type {
     padding-bottom: 0.75rem;
   }
-  .project_skills {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 @media (min-width: 769px) {
   #projects {
@@ -331,17 +327,22 @@ h1.project_title {
     width: 75%;
   }
   .project_skills {
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .project_skills ul li {
+    position: relative;
+    padding-left: 2em;
+    text-indent: -2em;
+  }
+  .project_skills {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 2rem;
     width: 80%;
   }
-  .project_skills ul#left {
-    float: left;
-    width: 35%;
-  }
   .project_skills ul#right {
-    float: right;
-    width: 65%;
     margin-left: 1rem;
   }
   .project_skills ul {

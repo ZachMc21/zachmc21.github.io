@@ -2,51 +2,55 @@
 
 /* HEADER */
 #header {
-    position: relative;
-    margin: 3% auto;
-    width: 94%;
+  position: relative;
+  margin: 3% auto;
+  width: 94%;
 }
 #title {
-    background-image: url('../images/backgrounds/header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5%;
-    box-shadow: 0 0 1vw 1vw v.$navy-blue inset;
+  background-image: url('../images/backgrounds/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  box-shadow: 0 0 1vw 1vw v.$navy-blue inset;
 }
 #title_inner {
-    margin: 0 auto;
-    width: 60%;
-    padding: 5%;
-    padding-bottom: 3%;
-    text-align: center;
-    background-color: v.$light-blue;
-    color: v.$navy-blue;
+  margin: 0 auto;
+  width: 80%;
+  padding: 5%;
+  padding-bottom: 3%;
+  text-align: center;
+  background-color: v.$light-blue;
+  color: v.$navy-blue;
 }
 #title_inner h1 {
-    margin-bottom: 1vw;
-    font-size: 4rem;
+  margin-bottom: 1vw;
+  font-size: 3em;
 }
 #title_inner a#email {
-    margin: 1rem auto;
-    font-size: 1.5rem;
-    color: black;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  color: black;
+  max-width: 80vw;
 }
 
 /* LINKS SECTION */
+//Make links stacked, not next to each other
 #links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem auto;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  gap: 0.5rem;
 }
 #links .column {
-    width: 30%;
-    text-align: center;
-    margin: auto;
-    padding: 2.5% 0;
-    font-size: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.25rem;
 }
 #links .column img {
-    max-width: 1.25rem;
-    height: auto;
+  max-width: 1.25rem;
+  height: auto;
 }
 
 
@@ -66,45 +70,42 @@ a:visited {
 
 /* Heading blurb */
 #whoami {
-    margin: 5% auto 0 auto;
-    width: 80%;
-    height: 40%;
-    padding: 4%;
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: v.$light-blue;
-    color: v.$navy-blue;
-    font-style: italic;
+  margin: 5% auto 0 auto;
+  width: 80%;
+  height: 40%;
+  padding: 4%;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: v.$light-blue;
+  color: v.$navy-blue;
+  font-style: italic;
 }
 #whoami p ~ p {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
-//Mobile
-@media (max-width: 480px) {
-    //Adjust font sizes to avoid overflow
-    #title_inner h1 {
-        font-size: 2.5rem;
-    }
 
-    //Make links stacked, not next to each other
-    #links {
-        display: block;
-        margin: 0 auto;
-        font-size: 1.25rem;
-    }
-    #links .column {
-        margin: 0 auto;
-        width: 100%;
-        font-size: 1.25rem;
-    }
-    #links .column img {
-        max-width: 1.25rem;
-        height: auto;
-    }
-
-    #whoami p {
-        font-size: 1.25rem;
-        margin: 3vw;
-    }
+/* Tablets and desktop */
+@media (min-width: 640px) {
+  #title_inner h1 {
+    margin-bottom: 1vw;
+    font-size: 4rem;
+  }
+  #links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1rem;
+  }
+  #links .column {
+    text-align: center;
+    margin: auto;
+    padding: 2.5% 0;
+    font-size: 2rem;
+  }
+  #links .column img {
+    width: 4rem;
+    height: auto;
+  }
 }
