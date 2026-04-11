@@ -1,42 +1,47 @@
 @use "../variables" as v;
 
 #skills {
-    overflow: hidden;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+#skills .column {
+  text-align: left;
+  font-size: 1.5em;
+  margin: 1%;
+  padding: 2rem 0;
+  background-color: v.$light-blue;
+}
+
+ul {
+  margin-left: 0.5rem;
+}
+
+ul.nested-0 {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+ul.nested-1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 //Desktop
 @media (min-width: 769px) { 
-    #skills {
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    #skills div {
-        width: 32%;
-    }
-}
-
-#skills .column {
-    text-align: left;
+  #skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  #skills div {
+    width: 32%;
+  }
+  ul.nested-0 {
     font-size: 1.5rem;
-    margin: 1% 0;
-    padding: 3% 0;
-    background-color: v.$light-blue;
-}
-ul.nested-1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
-
-//Mobile & Tablet
-@media (max-width: 768px) {
-    div #skills {
-        display: block;
-        margin: 0 auto;
-    }
-    #skills .column {
-        padding: 5vw 2vw;
-    }
+  }
+  ul.nested-1 {
+    font-size: 1.25rem;
+  }
 }

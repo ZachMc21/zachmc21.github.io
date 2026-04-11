@@ -3,18 +3,18 @@
 /* HEADER */
 #header {
   position: relative;
-  margin: 3% auto;
-  width: 94%;
 }
 #title {
+  display: flex;
+  flex-direction: column;
   background-image: url('../images/backgrounds/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5%;
-  box-shadow: 0 0 1vw 1vw v.$navy-blue inset;
+  margin: 0;
 }
 #title_inner {
   margin: 0 auto;
+  margin-top: 5%;
   width: 80%;
   padding: 5%;
   padding-bottom: 3%;
@@ -56,21 +56,21 @@
 
 /* LINK STYLING */
 a:link {
-    color: gray;
-    text-decoration: none;
+  color: gray;
+  text-decoration: none;
 }
 a:hover {
-    color: black;
-    text-decoration: underline;
+  color: black;
+  text-decoration: underline;
 }
 a:visited {
-    color: gray;
+  color: gray;
 }
 
 
 /* Heading blurb */
 #whoami {
-  margin: 5% auto 0 auto;
+  margin: 5% auto 5% auto;
   width: 80%;
   height: 40%;
   padding: 4%;
@@ -86,7 +86,19 @@ a:visited {
 
 
 /* Tablets and desktop */
-@media (min-width: 640px) {
+@media (min-width: 640px) {/* HEADER */
+  #header {
+    position: relative;
+    margin: 3% auto;
+    width: 94%;
+  }
+  #title {
+    background-image: url('../images/backgrounds/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    box-shadow: 0 0 1vw 1vw v.$navy-blue inset;
+  }
   #title_inner h1 {
     margin-bottom: 1vw;
     font-size: 4rem;
